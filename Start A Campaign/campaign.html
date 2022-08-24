@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Crowdfunding with Indiegogo</title>
+    <link rel="stylesheet" href="campaign.css">
+    
+</head>
+
+<body>
+    <div id="main_div">
+        <div id="imgdiv"><img
+                src="https://prod-backend-company-uploads-transcend-io.s3.amazonaws.com/57b21f6a-c3dd-4f0f-8004-f6dd369fabe2/242e003e-9311-4f33-bb03-46c24bee3754"
+                alt="Error Displaying Image"></div>
+        <div id="contdiv">
+            <h1>Let’s get ready to start your campaign!</h1>
+            <p id="text">We want to create the best onboarding for you – please fill out the information below.
+            Your answers will be locked for this campaign and can’t be changed later.
+            </p>
+            <p class="ques">Who are you raising money for?</p>
+            <p class="ans">
+                Please choose the type of account that will be receiving your funds.</p>
+                <div id="radio">
+                    <label class="radio">
+                        <input type="radio" name="radioopt" checked >Individual
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="radioopt" >Business or Nonprofit
+                    </label>
+                </div>
+            
+            <p class="ques">Where are you located?</p>
+            <p class="ans">If you are raising funds as an individual, what is your country of legal residence? If you
+                are raising funds for a business, where is the business headquartered? Learn more about <a href="https://support.indiegogo.com/hc/en-us/articles/115002299827-How-do-I-choose-my-bank-account-country-country-of-legal-residence-and-currency-">country
+                    limitations</a> .</p>
+            <select name="dropdown" class="drop">
+                <option value="">Select a residence country</option>
+                <option value="us">United States</option>
+                <option value="aus">Australia</option>
+                <option value="au">Austria</option>
+                <option value="bel">Belgium</option>
+                <option value="cn">Canada</option>
+                <option value="cy">Cyprus</option>
+                <option value="dn">Denmakr</option>
+                <option value="es">Estonia</option>
+                <option value="fn">Finland</option>
+                <option value="fr">France</option>
+                <option value="ge">Germany</option>
+                <option value="gr">Greece</option>
+                <option value="hk">Honk Kong</option>
+                <option value="ir">Ireland</option>
+                <option value="it">Italy</option>
+                <option value="in">India</option>
+                <option value="ja">Japan</option>
+                <option value="la">Lativa</option>
+                <option value="li">Lithunia</option>
+                <option value="lx">Luxembourg</option>
+                <option value="ma">Malta</option>
+                <option value="me">Mexico</option>
+                <option value="ne">Netherlands</option>
+                <option value="nz">New Zealand</option>
+                <option value="no">Norway</option>
+                <option value="po">Poland</option>
+                <option value="si">Singapore</option>
+                <option value="sl">Slovakia</option>
+                <option value="so">Slovenia</option>
+                <option value="sp">Spain</option>
+                <option value="sw">Sweden</option>
+                <option value="sw">Switzerland</option>
+                <option value="uk">United Kingdom</option>
+                <option value="oc">Other Countries</option>
+            </select>
+            <p class="ques">Where is your bank?</p>
+            <p class="ans">Your bank account location determines the currency in which you can raise funds.</p>
+            <select name="city" class="drop">
+                <option value="">Select a bank country</option>
+                <option value="us">United States</option>
+                <option value="oc">Other Countries</option>
+            </select>
+            <button id="start">START MY CAMPAIGN</button>
+            <p class="ques">What countries are supported by Indiegogo?</p>
+            <p class="ans">You can start a campaign in countries supported by our payment processor. Learn more about
+                potential options if your country is not supported at this time.</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="campaign.js"></script>
