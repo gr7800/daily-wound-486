@@ -198,6 +198,11 @@
 
         index++;
 
+        if(index >= divArr.length-1){
+            index = 0;
+        }else{
+            index++;
+        }
         let img4 = document.createElement("img");
         img4.src = divArr[index];
 
@@ -240,6 +245,11 @@
 
         index--;
 
+        if(index <=3){
+            index = divArr.length-1;
+        }else{
+            index--;
+        }
         let img4 = document.createElement("img");
         img4.src = divArr[index];
 
