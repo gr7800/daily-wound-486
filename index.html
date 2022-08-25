@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container2{
+        display: grid;
+        margin: auto;
+        width: 1218px;
+        height: 546px;
+       
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 100%;
+        gap: 35px;
+        margin-top: 10px;
+    }
+    #container2 > a > div{
+        padding: 0px;
+        border: 1px solid rgb(219, 214, 214);
+    }
+    #container2 > a > div> img {
+        width: 100.15%;
+        height: 546px;
+        
+    }
+    #container2 > a > div:hover{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        margin-top: -2.5px;
+        border: none;
+    }
+    #head1{
+        width: 1218px;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #head1 > p{
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #head1>div>button{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-color: transparent;
+        border: 1.5px solid black;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    #head1>div>button:first-child{
+        margin-right: 15px;
+    }
+    #head1>div>button:hover{
+        background-color: black;
+        border: 1.5px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+</style>
+<body>
+    <div id="head1">
+        <p>Popular Projects</p>
+        <div>
+            <button onclick="previous2()"><</button>
+            <button onclick="next2()">></button>
+        </div>
+    </div>
+
+
+    <div id="container2">
+        <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
+            <div id="box1">
+                <img src="https://lh3.googleusercontent.com/bykJreOqA6opMNI_9IAS6e5DYRrnuYAgqS_t46nI-gnze1CkM7rjKFUDSdZiECrWMy8UYTBbmGuFC72HCvzPKG8gO-cFxrIQkE9MXRK6ZhkmEX4I-dRG2Us4ZcS1uns7UCgvWeq_Bw=w2400" alt="">
+            </div>
+        </a>
+
+
+        <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
+            <div id="box2">
+                <img src="https://lh3.googleusercontent.com/N4Z-FIHse8FjreAu_-1Y6xss7dYKmQqLXkFgT_Lu0tZ0icyB7miTInsWXrAHfFzDG8ELMcN5LjK_BNBorSdSZ507OqTe2lNitsw-5-O-KP4bTvWYM7mT3mWIhixq3FkWa-IcRZmjpg=w2400" alt="">
+            </div>
+        </a>
+
+        <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
+            <div id="box3">
+                <img src="https://lh3.googleusercontent.com/6TjCF42iybiBYFZ9N4UC868iHarr6MHOyt2QLjAViyeaQQpSZgVbqz8vL-h_h1_iBpHU59QWMugCnF73os-i_OK08t0IMe9X-daWpre6-ULX6SNjeUlapRfj8rg6Rwvp2Jb5ybSEcw=w2400" alt="">
+            </div>
+        </a>
+
+        <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
+            <div id="box4">
+                <img src="https://lh3.googleusercontent.com/0xM6CT6NHLqrgDUPikvEk15kNn_gKNk_GaINjaDuV5_bKco7CR3bPhaJ1i5bv-lU4Zxa7Ii5JL5Lw9zLoivvxbGWduyYypEWgrINQznwIikQlezc1Ammh56CCFe66cE29KckInUPlw=w2400" alt="">
+            </div>
+        </a>
+
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+    // let slid1 =[
+    //     "https://lh3.googleusercontent.com/bykJreOqA6opMNI_9IAS6e5DYRrnuYAgqS_t46nI-gnze1CkM7rjKFUDSdZiECrWMy8UYTBbmGuFC72HCvzPKG8gO-cFxrIQkE9MXRK6ZhkmEX4I-dRG2Us4ZcS1uns7UCgvWeq_Bw=w2400",
+    //     "https://lh3.googleusercontent.com/N4Z-FIHse8FjreAu_-1Y6xss7dYKmQqLXkFgT_Lu0tZ0icyB7miTInsWXrAHfFzDG8ELMcN5LjK_BNBorSdSZ507OqTe2lNitsw-5-O-KP4bTvWYM7mT3mWIhixq3FkWa-IcRZmjpg=w2400",
+    //     "https://lh3.googleusercontent.com/6TjCF42iybiBYFZ9N4UC868iHarr6MHOyt2QLjAViyeaQQpSZgVbqz8vL-h_h1_iBpHU59QWMugCnF73os-i_OK08t0IMe9X-daWpre6-ULX6SNjeUlapRfj8rg6Rwvp2Jb5ybSEcw=w2400",
+    //     "https://lh3.googleusercontent.com/0xM6CT6NHLqrgDUPikvEk15kNn_gKNk_GaINjaDuV5_bKco7CR3bPhaJ1i5bv-lU4Zxa7Ii5JL5Lw9zLoivvxbGWduyYypEWgrINQznwIikQlezc1Ammh56CCFe66cE29KckInUPlw=w2400",
+    // ];
+
+    // let slid2=[
+    //     "https://lh3.googleusercontent.com/CqdN8FHa-CmTYBHbByJfgbRyv_W9a1c08QKWXO6mi9Jp6l37YkJcjCwYIYZ-PVcqRg6WWWZQFAzHgb-MDHPapTHIpPZcB_OLuPxbBA1DON2wzDrQkZFvPjhKYaHeEUrXH6qw8zg7Dw=w2400",
+    //     "https://lh3.googleusercontent.com/-MC8RooWV74DhJIq5FNHZY_dxaODZF_Nk1w_jj-lzAp9pd7mHDSnvXP0rMv74Tzp-Iqz9Bqy6ZRYLUb67Pe3zFzhoaUgxOapAT27DzlsTlSz5j7iDNMbeGGp6mvKDg6ntUlHFCHbAw=w2400",
+    //     "https://lh3.googleusercontent.com/1JmvaqxvgJUSEgZXgl67lphZLqwLuToRhuXY-Yxq-5WHCAtOuGz1-HSRHgBp9C5GQO3fsCTSyOuYRJyNyflZQFLJQafqsjl9CxgS-praAQp_sl_sDlUGrzQAqJR27uDDOoil-4IM0Q=w2400",
+    //     "https://lh3.googleusercontent.com/v6CwtoQrZVQfG6Qf6nCdr_jTIoZhM3KhcuKH9Sw4XPXPCOF_4Tt9glCCQkgPxOQJTyU613FtnIiZ5_ZBrHXbZvKpoKtd6NuI8wzc2yXyon7b_rtmip0CtxFTs3E8yd_JmiFGjKe_5A=w2400",
+    // ];
+
+    // let slid3=[
+    //     "https://lh3.googleusercontent.com/jClaQZcvdSN-Ubi8eY3PFbfwyu8UJNZH8pw3CYN6PKjT8GNC2CRqMyIEd6R2qqDy22ZIXejlQAmQZtDHmgd1HmHcP2tX5JeV7LW9eiABaaXknPltH1M1UHlu3tkmJ_Lh8akpOgtYhA=w2400",
+    //     "https://lh3.googleusercontent.com/iAwpLRHEAECPya2RsXsIZ726O1frsF8TTDlfZaUK4W8bxXbeGQNR1ook5h5VkrMeanNlY1gBOqRZwVlX3zPJ3criLICRoqcCZhWJGC7S3Scz-_K7GqBL9KEVIwA-rrzo2Wxt7DmIPA=w2400",
+    //     "https://lh3.googleusercontent.com/Msin6A9e1GJS99x8iVIhRGFKlt_RN5TjNcpqaWQjf7_LaK0cGWje36N6CizJqYOcC-bmUeY4WbJbhp2DAthp09xgP-mThB9Lsow3c08-yuzxdN_TeYBhSozVancAcZBROGLwhxRNdA=w2400",
+    //     "https://lh3.googleusercontent.com/H5-oykSeesbl1jAXViwZwX0OPlEiP-UFzmyj0ilSNhsvP42n7U_IQPn00Ob2es8-4AisJ331tjo_xCE9WTJJTM8GM0PIBp7loHT88q3ogwJN7eh0hig9EIqUJHvHv42Ge7YolRX7Fw=w2400",
+    // ];
+
+    // let slid4=[
+    //     "https://lh3.googleusercontent.com/iXThVVtZssWBwxMgwGEOnpi0rXoZ_NEf9whCkjLZXn0iNlko0sFs_B8Dhol-Tqq3kNdfeg-_lgoO7Ug0SRvXHPYJUz6WLkv_PpFwmUu_pyRGYbKf7t55yzE61wdJwfj6vt_YotaMfQ=w2400",
+    //     "https://lh3.googleusercontent.com/Ue9RdzMbwhSNJDLHzI2EOP1l9hCq9dxqzCGOrIw3gWg3pPakHOjFLJvBZ_yQw79takhMYcaPUg3yZT3xCuU58tdeH56awW8D5t0Ef8tM8rsALSuK7OETWtQubA317Hc-SZX9QpzdEg=w2400",
+    //     "https://lh3.googleusercontent.com/ULIDsFUXs62ddGufTWNrKmVW-CQxHTM9MAyOI0N8jL-DJA9sFKgeS2qC7MRQs_u8V_V5QUrIy2rHNm9YR8QRqCkKm0rFXF-649RTT9DgGIwQfCZaLoGlYZ4-Z2h0ch4xZFXJ95Fyug=w2400",
+    //     "https://lh3.googleusercontent.com/h-gP90AnUhYk5TZtioHHxD0K4e_pTmNGgvU3MD49rifqRdnpQ265mnuTpn8UVSaANNZLIVHRiKn_yS6h_ZozjuYbSh_A21iU9uhmRMQv48Ts6wuon5UHKtxJ_C1P39-Mx-RX4D4XEA=w2400",
+    // ];
+
+    // let slid5=[
+    //     "https://lh3.googleusercontent.com/AJk0nZ7_GBzccyk-jyy55s3Dl4UjR-SwWveW30vm1J8If5Tn8uRDRg9crSmapwaItqWIl8IlSZ2Eo63Gpfgx_LS5DBEJORgNMLrHX_3G0PT2Hj2KJn8t9tKiFXKgUAjWSo8vgLYxdw=w2400",
+    //     "https://lh3.googleusercontent.com/9DsDT0vz_eEqCdX6siunOa2VgOEvogrATtllza-OrFF3l9UXHH0teNCnVREBYy9f8v3AqQJlPEbF84pJIyCAYmlRiO-8c2Uv2NyQER9RwvWqrhFOWMQwfGJuNCul_L69GKOgz-GMKg=w2400",
+    //     "https://lh3.googleusercontent.com/8ATD6Jp759WwOsrEO1KBIBLJP66pOLbfVvCY3CvT7_FwjuHUpbGwCABS4e7EtIXC3pJQ_tNSu_LAYtQxQ6wPuNcyPayfFVgRGL4S7o1joUeZ6ZubK0jzWE-f0YzH6X7HUotiO1eM7w=w2400",
+    //     "https://lh3.googleusercontent.com/PazMbQTIPF3vXQyeT4iTYX_XvDHNMhCZMH2wYM4ubo8J3_c2s6M43JHHPOrez4BR4qLuk80ybUSpbmXGEQ4hjg7AOSHkSsBm2_00RwetUYgJFwAzDL0_IcPwY8Hb7Bm-zsJv_ZrRZA=w2400",
+    // ];
+
+
+    let divArr=[
+        "https://lh3.googleusercontent.com/bykJreOqA6opMNI_9IAS6e5DYRrnuYAgqS_t46nI-gnze1CkM7rjKFUDSdZiECrWMy8UYTBbmGuFC72HCvzPKG8gO-cFxrIQkE9MXRK6ZhkmEX4I-dRG2Us4ZcS1uns7UCgvWeq_Bw=w2400",
+        "https://lh3.googleusercontent.com/N4Z-FIHse8FjreAu_-1Y6xss7dYKmQqLXkFgT_Lu0tZ0icyB7miTInsWXrAHfFzDG8ELMcN5LjK_BNBorSdSZ507OqTe2lNitsw-5-O-KP4bTvWYM7mT3mWIhixq3FkWa-IcRZmjpg=w2400",
+        "https://lh3.googleusercontent.com/6TjCF42iybiBYFZ9N4UC868iHarr6MHOyt2QLjAViyeaQQpSZgVbqz8vL-h_h1_iBpHU59QWMugCnF73os-i_OK08t0IMe9X-daWpre6-ULX6SNjeUlapRfj8rg6Rwvp2Jb5ybSEcw=w2400",
+        "https://lh3.googleusercontent.com/0xM6CT6NHLqrgDUPikvEk15kNn_gKNk_GaINjaDuV5_bKco7CR3bPhaJ1i5bv-lU4Zxa7Ii5JL5Lw9zLoivvxbGWduyYypEWgrINQznwIikQlezc1Ammh56CCFe66cE29KckInUPlw=w2400",
+        "https://lh3.googleusercontent.com/CqdN8FHa-CmTYBHbByJfgbRyv_W9a1c08QKWXO6mi9Jp6l37YkJcjCwYIYZ-PVcqRg6WWWZQFAzHgb-MDHPapTHIpPZcB_OLuPxbBA1DON2wzDrQkZFvPjhKYaHeEUrXH6qw8zg7Dw=w2400",
+        "https://lh3.googleusercontent.com/-MC8RooWV74DhJIq5FNHZY_dxaODZF_Nk1w_jj-lzAp9pd7mHDSnvXP0rMv74Tzp-Iqz9Bqy6ZRYLUb67Pe3zFzhoaUgxOapAT27DzlsTlSz5j7iDNMbeGGp6mvKDg6ntUlHFCHbAw=w2400",
+        "https://lh3.googleusercontent.com/1JmvaqxvgJUSEgZXgl67lphZLqwLuToRhuXY-Yxq-5WHCAtOuGz1-HSRHgBp9C5GQO3fsCTSyOuYRJyNyflZQFLJQafqsjl9CxgS-praAQp_sl_sDlUGrzQAqJR27uDDOoil-4IM0Q=w2400",
+        "https://lh3.googleusercontent.com/v6CwtoQrZVQfG6Qf6nCdr_jTIoZhM3KhcuKH9Sw4XPXPCOF_4Tt9glCCQkgPxOQJTyU613FtnIiZ5_ZBrHXbZvKpoKtd6NuI8wzc2yXyon7b_rtmip0CtxFTs3E8yd_JmiFGjKe_5A=w2400",
+        "https://lh3.googleusercontent.com/jClaQZcvdSN-Ubi8eY3PFbfwyu8UJNZH8pw3CYN6PKjT8GNC2CRqMyIEd6R2qqDy22ZIXejlQAmQZtDHmgd1HmHcP2tX5JeV7LW9eiABaaXknPltH1M1UHlu3tkmJ_Lh8akpOgtYhA=w2400",
+        "https://lh3.googleusercontent.com/iAwpLRHEAECPya2RsXsIZ726O1frsF8TTDlfZaUK4W8bxXbeGQNR1ook5h5VkrMeanNlY1gBOqRZwVlX3zPJ3criLICRoqcCZhWJGC7S3Scz-_K7GqBL9KEVIwA-rrzo2Wxt7DmIPA=w2400",
+        "https://lh3.googleusercontent.com/Msin6A9e1GJS99x8iVIhRGFKlt_RN5TjNcpqaWQjf7_LaK0cGWje36N6CizJqYOcC-bmUeY4WbJbhp2DAthp09xgP-mThB9Lsow3c08-yuzxdN_TeYBhSozVancAcZBROGLwhxRNdA=w2400",
+        "https://lh3.googleusercontent.com/H5-oykSeesbl1jAXViwZwX0OPlEiP-UFzmyj0ilSNhsvP42n7U_IQPn00Ob2es8-4AisJ331tjo_xCE9WTJJTM8GM0PIBp7loHT88q3ogwJN7eh0hig9EIqUJHvHv42Ge7YolRX7Fw=w2400",
+        "https://lh3.googleusercontent.com/iXThVVtZssWBwxMgwGEOnpi0rXoZ_NEf9whCkjLZXn0iNlko0sFs_B8Dhol-Tqq3kNdfeg-_lgoO7Ug0SRvXHPYJUz6WLkv_PpFwmUu_pyRGYbKf7t55yzE61wdJwfj6vt_YotaMfQ=w2400",
+        "https://lh3.googleusercontent.com/Ue9RdzMbwhSNJDLHzI2EOP1l9hCq9dxqzCGOrIw3gWg3pPakHOjFLJvBZ_yQw79takhMYcaPUg3yZT3xCuU58tdeH56awW8D5t0Ef8tM8rsALSuK7OETWtQubA317Hc-SZX9QpzdEg=w2400",
+        "https://lh3.googleusercontent.com/ULIDsFUXs62ddGufTWNrKmVW-CQxHTM9MAyOI0N8jL-DJA9sFKgeS2qC7MRQs_u8V_V5QUrIy2rHNm9YR8QRqCkKm0rFXF-649RTT9DgGIwQfCZaLoGlYZ4-Z2h0ch4xZFXJ95Fyug=w2400",
+        "https://lh3.googleusercontent.com/h-gP90AnUhYk5TZtioHHxD0K4e_pTmNGgvU3MD49rifqRdnpQ265mnuTpn8UVSaANNZLIVHRiKn_yS6h_ZozjuYbSh_A21iU9uhmRMQv48Ts6wuon5UHKtxJ_C1P39-Mx-RX4D4XEA=w2400",
+        "https://lh3.googleusercontent.com/AJk0nZ7_GBzccyk-jyy55s3Dl4UjR-SwWveW30vm1J8If5Tn8uRDRg9crSmapwaItqWIl8IlSZ2Eo63Gpfgx_LS5DBEJORgNMLrHX_3G0PT2Hj2KJn8t9tKiFXKgUAjWSo8vgLYxdw=w2400",
+        "https://lh3.googleusercontent.com/9DsDT0vz_eEqCdX6siunOa2VgOEvogrATtllza-OrFF3l9UXHH0teNCnVREBYy9f8v3AqQJlPEbF84pJIyCAYmlRiO-8c2Uv2NyQER9RwvWqrhFOWMQwfGJuNCul_L69GKOgz-GMKg=w2400",
+        "https://lh3.googleusercontent.com/8ATD6Jp759WwOsrEO1KBIBLJP66pOLbfVvCY3CvT7_FwjuHUpbGwCABS4e7EtIXC3pJQ_tNSu_LAYtQxQ6wPuNcyPayfFVgRGL4S7o1joUeZ6ZubK0jzWE-f0YzH6X7HUotiO1eM7w=w2400",
+        "https://lh3.googleusercontent.com/PazMbQTIPF3vXQyeT4iTYX_XvDHNMhCZMH2wYM4ubo8J3_c2s6M43JHHPOrez4BR4qLuk80ybUSpbmXGEQ4hjg7AOSHkSsBm2_00RwetUYgJFwAzDL0_IcPwY8Hb7Bm-zsJv_ZrRZA=w2400",
+
+    ] 
+    let index = 3;
+    let next2 = () => {
+        let div1 = document.getElementById("box1")
+        let div2 = document.getElementById("box2")
+        let div3 = document.getElementById("box3")
+        let div4 = document.getElementById("box4")
+
+        if(index >= divArr.length-1){
+            index = 0;
+        }else{
+            index++;
+        }
+
+        div1.innerHTML = null;
+        div2.innerHTML = null;
+        div3.innerHTML = null;
+        div4.innerHTML = null;
+
+        let img1 = document.createElement("img");
+        img1.src = divArr[index];
+
+        index++;
+
+        let img2 = document.createElement("img");
+        img2.src = divArr[index];
+
+        index++;
+
+        let img3 = document.createElement("img");
+        img3.src = divArr[index];
+
+        index++;
+
+        let img4 = document.createElement("img");
+        img4.src = divArr[index];
+
+        div1.append(img1)
+        div2.append(img2)
+        div3.append(img3)
+        div4.append(img4)
+
+    };
+
+    let previous2 = () => {
+        let div1 = document.getElementById("box1")
+        let div2 = document.getElementById("box2")
+        let div3 = document.getElementById("box3")
+        let div4 = document.getElementById("box4")
+
+        if(index <=3){
+            index = divArr.length-1;
+        }else{
+            index--;
+        }
+
+        div1.innerHTML = null;
+        div2.innerHTML = null;
+        div3.innerHTML = null;
+        div4.innerHTML = null;
+
+        let img1 = document.createElement("img");
+        img1.src = divArr[index];
+
+        index--;
+
+        let img2 = document.createElement("img");
+        img2.src = divArr[index];
+
+        index--;
+
+        let img3 = document.createElement("img");
+        img3.src = divArr[index];
+
+        index--;
+
+        let img4 = document.createElement("img");
+        img4.src = divArr[index];
+
+        div1.append(img4)
+        div2.append(img3)
+        div3.append(img2)
+        div4.append(img1)
+    }
+</script>
