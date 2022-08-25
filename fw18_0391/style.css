@@ -280,6 +280,10 @@ section{
    margin-bottom: 20px;
  }
 
+ /* ---------------------------------------------------------- */
+ /* ------------------------ footer ------------------------ */
+ /* ---------------------------------------------------------- */
+
  footer{
    background-color: #f5f5f5;
    padding: 60px 10px 0;
@@ -288,7 +292,6 @@ section{
    width: 80%;
    margin: auto;
    display: flex;
-   /* align-items: center; */
    justify-content: space-between;
  }
 
@@ -296,7 +299,6 @@ section{
    width: 58%;
    display: flex;
    justify-content: space-between;
-   /* border: 2px solid red; */
  }
 
  .indiegogo-email{
@@ -315,7 +317,6 @@ section{
     color: #2a2a2a;
     background-color: transparent;
  }
-
  .footer-nav>.navlink>h3{
    font-weight: 500;
    line-height: 1.5;
@@ -324,7 +325,6 @@ section{
    text-align: left;
    margin-bottom: 10px;
  }
-
  .indiegogo-email>h4{
    padding-bottom: 4px;
    font-weight: 700;
@@ -372,7 +372,6 @@ section{
    background-color: #E51075;
 
 }
-
 .indiegogo-email>button{
    width: 100%;
    vertical-align: top;
@@ -394,23 +393,20 @@ section{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-
 #footer-icon{
    width: 80%;
    margin: auto;
    display: flex;
    align-items: center;
-   /* margin-right: 20px; */
 }
 #footer-icon>button{
-height: 40px;
-padding: 0px 30px;
-margin-right: 25px;
-background-color: #fff;
-border: 1px solid #c8c8c8;
-outline: none;
-cursor: pointer;
+   height: 40px;
+   padding: 0px 30px;
+   margin-right: 25px;
+   background-color: #fff;
+   border: 1px solid #c8c8c8;
+   outline: none;
+   cursor: pointer;
 }
 #footer-icon>img{
    width: 22px;
@@ -439,3 +435,5 @@ hr{
 #copy-right>p:hover{
    text-decoration: underline;
 }
+
+/* ------------------------ end ------------------------ */
