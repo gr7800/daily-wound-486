@@ -54,7 +54,26 @@ let append = (data) => {
           div.append(img, div3 )
           card_section.append(div)
 
+         
+
      })
+ 
+}
+
+let btn = document.createElement("button")
+btn.addEventListener("click", () => {
+     seeMore()
+})
+
+btn.innerText = "see more"
+let mainCardSection = document.getElementById("main-card-section")
+mainCardSection.append(btn)
+let seeMore = async () =>{
+     let flag = false;
+     let res = await fetch(`https://quiet-waters-60994.herokuapp.com/api/Indiegogo`)
+     let data = await res.json()
+     console.log(data)
+     append(data)   
 }
 
 

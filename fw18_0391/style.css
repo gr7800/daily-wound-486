@@ -232,10 +232,31 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 40px;
-    
+ }
+ #main-card-section>button{
+   font-family: "benton-sans","Helvetica","sans-serif";
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 14px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   display: inline-block;
+   cursor: pointer;
+   background-color: #E51075;
+   border: 2px solid #E51075;
+   padding: 11px 58px;
+   border-radius: 2px;
+   color: #ffffff;
+   text-align: center;
+   min-height: 40px;
+   text-align: center;
+   display: flex;
+   margin: 100px auto;
+   text-align: center;
    
  }
 
+ /* ------------------- collection ------------------- */
 
  #container {
    /* width: 100%; */
@@ -434,6 +455,155 @@ hr{
 }
 #copy-right>p:hover{
    text-decoration: underline;
+}
+
+
+
+/* -------------------- @media query -------------------- */
+
+@media all and (min-width:770px) and (max-width:900px){
+   #footer-section{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+   
+    .footer-nav{
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+    }
+   
+    .indiegogo-email{
+      width: 25%;
+      text-align: center;
+   
+    }
+
+
+}
+
+@media all and (min-width:470px) and (max-width:756px){
+   #moreCollections{
+      width: 95%;
+   }
+
+   #card_section{
+      width: 95%;
+   }
+
+   #footer-section{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      text-align: center;
+    }
+    .indiegogo-email{
+      width: 90%;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 30px;
+   
+    }
+    .footer-nav{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 30px;
+
+    }
+
+    
+    .container > .icon{
+      width: 50%;
+      margin: auto;
+  }
+
+  .container > .content{
+   display: none;
+}
+
+.container > .icon > img{
+   width: 15%;
+   margin-right: 10px;
+}
+}
+
+@media all and (min-width:270px) and (max-width:465px){
+
+   #card_section{
+      width: 95%;
+   }
+
+   #moreCollections{
+      width: 97%;
+   }
+
+   #footer-section{
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    .indiegogo-email{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 30px;
+   
+    }
+   .footer-nav{
+      width: 90%;
+      margin-bottom: 30px;
+      flex-direction: column;
+
+    }
+
+    #footer-icon{
+      width: 90%;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 30px;
+   }
+   #footer-icon>button{
+      margin-bottom: 20px;
+      padding: 0px 25px;
+      font-size: 10px;
+   }
+   #footer-icon>img{
+      margin-bottom: 20px;
+   }
+
+   #copy-right{
+      width: 100%;
+      flex-direction: column;
+   }
+   #copy-right>p{
+      margin-bottom: 10px;
+   }
+
+   .container > .icon{
+      width: 50%;
+      margin: auto;
+  }
+
+  .container > .content{
+   display: none;
+}
+.container > .icon > img{
+   width: 20%;
+}
+
+.container > .icon > button{
+   width: 100%;
+   padding: 10px 30px;
+   margin-left: 5px;
+}
+.container > .icon > button>img{
+   width: 30%;
+}
 }
 
 /* ------------------------ end ------------------------ */
