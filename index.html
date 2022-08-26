@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #container3 {
+        width: 1218px;
+        height: 820px;
+        /* border: 1px solid red; */
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(2, 592px);
+        grid-template-rows: repeat(2, 420px);
+        column-gap: 30px;
+        row-gap: 15px;
+        text-decoration: none;
+        margin-top: 45px;
+    }
+
+    #container3,#backtheprotxt:hover {
+        cursor: pointer;
+    }
+
+    #container3>div {
+        background-color: black;
+    }
+
+    #container3>div>img {
+        width: 100%;
+        height: 90%;
+
+    }
+
+    #container3>div>img:hover {
+        opacity: 0.8;
+    }
+
+    #container3>div>div {
+        width: 592px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: -5px;
+        align-items: center;
+        background-color: white;
+    }
+
+    #container3>div>div>p:first-child {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #2a2a2a;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    #container3>div>div>p:last-child {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bolder;
+        color: #2a2a2a;
+        line-height: 18px;
+        text-decoration: none;
+    }
+
+    #container3>div>div>p:last-child:hover {
+        color: #e51075;
+        text-decoration: underline;
+    }
+    #backthepro{
+        width: 1218px;
+        height: 350px;
+        margin: auto;
+        margin-top: 80px;
+        position: relative;
+    }
+    #backthepro :hover{
+        cursor: pointer;
+    }
+    #backthepro > img {
+        width: 100%;
+        height: 100%;
+    }
+    #backtheprotxt>img{
+        width: 670px;
+        height: 190px;
+    }
+    #backtheprotxt{
+        position: absolute;
+        left: 420px;
+        top: 1000px;
+    }
+    #learnlink{
+        position: absolute;
+        left: 650px;
+        top: 1200px;
+        text-decoration: none;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 550;
+        color: #2a2a2a;
+        line-height: 21px;
+    }
+    #learnlink:hover{
+        color: #e51075;
+    }
+</style>
+
+<body>
+
+    <div id="container3" onclick="container3()">
+        <div>
+            <img src="https://lh3.googleusercontent.com/zyKw27SRyWgh_52eGVl9A3IbJlqhG_Bsl4EX0M83VLkWjJABleHUp0M4OtR2blKi-BdYJEZNvob_Sk6bmayqVUN-AMOjhsR4MQz2La07Ru3sbaLwdi2ULZShuXhxK4L6FgoxF-FKUQ=w2400"
+                alt="">
+            <div>
+                <p>Our roundup for standout projects</p>
+                <p>SEE THE COLLECTION ></p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://lh3.googleusercontent.com/D4J3AUeh7nMvHgm7QsJDB_UCmHJAv8FyLA7xh9RT8YcYXh9DCM62ObIY-SawOWlpM8FptPytAn6yLgG4P3PXXG6qRgtKB0zU-yivfEF9DzcmhIriIpV_UrakbZpdPOn0XKBWcW3ktA=w2400"
+                alt="">
+            <div>
+                <p>Techoss S4200 & more team favorites</p>
+                <p>SEE THE COLLECTION ></p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://lh3.googleusercontent.com/upTuqp_xQmrkOc5DTa2aeTh6rd6LMt62WC-qjOMLM4tG_qiTZ1mkGyvmre2tflNxTlnlNxBlfCuas1UB6o7qMpAFKBceeiYPf6K1ctQPLoXNKvdYgiKDFNzpZbNkewbfoVY_lC8V6g=w2400"
+                alt="">
+            <div>
+                <p>Check out these innovative steals</p>
+                <p>SEE THE COLLECTION ></p>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://lh3.googleusercontent.com/hLGGEmiL720tjUoFbWOwF9IymIXnhRIrxk7NTv9f8lD5ek-UEDOPj0e8SA7L6qh3jOSPk5kEyUjI8ZzahRqBIk8mUq5VNgCPMj0-7O7kJB5DcvQJi_SvLMUr9r0vZr7rFsJg7ElhWA=w2400"
+                alt="">
+            <div>
+                <p>These campaingns could be in your hands quickly</p>
+                <p>SEE THE COLLECTION ></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="backthepro" onclick="crowdfunding()">
+        <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.3,f_auto/homepage/cf-bg-desktop-lg.jpg" alt="">
+    </div>
+
+    <div id="backtheprotxt" onclick="crowdfunding()">
+        <img src="https://lh3.googleusercontent.com/OLbASQNQC7lAOtSeghnXJxodAXz12aOiPlnYWruh7oNT3smtktdpXQPuFbNbzfS6WXHQQF-IyzEP8pOsXsCTUpURjzwz34PbhlPr3NrGH8-U3cxKOcAge4HJj4gkWiZTqmgCNtMSgg=w2400" alt="">
+    </div>
+
+    <a href="https://www.indiegogo.com/about/what-we-do" id="learnlink">LEARN ABOUT CROWDFUNDING ></a>
+</body>
+
+</html>
+
+<script>
+    let container3 = () => {
+        window.location.href = "https://www.indiegogo.com/campaign_collections/top-10"
+    }
+
+    let crowdfunding = () => {
+        window.location.href = "https://www.indiegogo.com/about/what-we-do"
+    }
+</script>
