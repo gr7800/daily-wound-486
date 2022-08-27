@@ -7,6 +7,8 @@
     <title>Document</title>
     
 </head>
+<link rel="stylesheet" href="./navbar.css">
+<link rel="stylesheet" href="./bottompart.css">
 <style>
 #cateint{
     text-align: center;
@@ -157,6 +159,7 @@
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
+    margin-top: 90px;
 }
 #buttonDiv > button{
     height: 40px;
@@ -373,207 +376,524 @@
     #learnlink:hover{
         color: #e51075;
     }
-
+    
+    /* #indegogohome{
+        display: block;
+        position: absolute;
+    } */
 </style>
 <body onload="slidShow()" style="margin: 0px;">
-   
-
-
-
-
-
-
-
-
-
-
-
-    <a href="https://www.indiegogo.com/projects/last-charging-cable-power-bank-you-ll-ever-need#/">
-        <div id="slidshow" >
-            <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1660248119/xlo6p2xtbov5ethy5fte.png" alt="">
-            <div id="title">
-                <p id="t1" style="font-size: 14px; font-weight: 600;line-height: 21px;">FEATURED</p>
-                <p id="t2" style="font-weight: 700; font-size: 16px; line-height: 24px;">Indiegogo & StartEngine Team Up to Help Entrepreneurs Raise More Capital</p>
-                <p id="t3" style="font-size: 16px; font-weight: 500; line-height: 24px;" >Learn how entrepreneurs can use equity crowdfunding to access more capital after their Indiegogo campaign.</p>
-                <p id="t4" style="font-weight: 700; font-size: 12px; line-height: 18px;">LEARN MORE</p>
+    <div id="navbarindigogo">
+        <div id="navbarindigogofirst">
+            <div>
+                <a href="./index.html"><img src="https://i.ibb.co/r3YNyzz/INDIGOGOLOGO.png" alt="INDIGOGOLOGO"
+                        border="0"></a>
             </div>
-           
-        </div>
-    </a>
+            <div class="dropdown">
+                <Button class="dropbtn" id="dropbtn">Explore v</Button>
 
+                <div id="myDropdown" class="dropdown-content">
+
+                    <div>
+                        <div>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/5rngnTH/Explore-our-project.png"
+                                    alt="Explore-our-project" border="0"></a>
+                        </div>
+                        <div>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/rQQYzhn/Our-Top-10-finds.png"
+                                    alt="Our-Top-10-finds" border="0"></a>
+                        </div>
+                        <div>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/0hMWG6W/Team-Fevrites.png"
+                                    alt="Team-Fevrites" border="0"></a>
+                        </div>
+                        <div>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/pnp6N3D/spend-under-1000.png"
+                                    alt="spend-under-1000" border="0"></a>
+                        </div>
+                        <div>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/Fqf24K4/join-the-convo.png"
+                                    alt="join-the-convo" border="0"></a>
+                        </div>
+                    </div>
+                    <div id="btmdroppart">
+                        <div>
+                            <div>
+                                <a
+                                    href="https://www.indiegogo.com/explore/tech-innovation?project_type=campaign&project_timing=all&sort=trending">TECH
+                                    & INNOVATION</a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://www.indiegogo.com/explore/creative-works?project_type=campaign&project_timing=all&sort=trending">CREATIVE
+                                    WORKS</a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://www.indiegogo.com/explore/community-projects?project_type=campaign&project_timing=all&sort=trending">COMMUNITY
+                                    PROJECTS</a>
+                            </div>
+                        </div>
+                        <div >
+                            <div>
+                                <div id="color8989">
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/audio?project_type=campaign&project_timing=all&sort=trending">Audio</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/camera-gear?project_type=campaign&project_timing=all&sort=trending">Camera Gear</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/education?project_type=campaign&project_timing=all&sort=trending">Education</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/energy-green-tech?project_type=campaign&project_timing=all&sort=trending">Energy & Green Tech</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/fashion-wearables?project_type=campaign&project_timing=all&sort=trending">Fashion & Wearables</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/food-beverages?project_type=campaign&project_timing=all&sort=trending">Food & Beverages</a>
+                                    </div>
+                                </div>
+                                <div id="color8989">
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/health-fitness?project_type=campaign&project_timing=all&sort=trending">Health & Fitness</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/home?project_type=campaign&project_timing=all&sort=trending">Home</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/phones-accessories?project_type=campaign&project_timing=all&sort=trending">Phones & Accessories</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/productivity?project_type=campaign&project_timing=all&sort=trending">Productivity</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/transportation?project_type=campaign&project_timing=all&sort=trending">Transportation</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/travel-outdoors?project_type=campaign&project_timing=all&sort=trending">Travel & Outdoors</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div id="color8989">
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/art?project_type=campaign&project_timing=all&sort=trending">Art</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/comics?project_type=campaign&project_timing=all&sort=trending">Comics</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/dance-theater?project_type=campaign&project_timing=all&sort=trending">Dance & Theater</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/film?project_type=campaign&project_timing=all&sort=trending">Film</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/music?project_type=campaign&project_timing=all&sort=trending">Music</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/photography?project_type=campaign&project_timing=all&sort=trending">Photography</a>
+                                    </div>
+                                </div>
+                                <div id="color8989">
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/podcasts-blogs-vlogs?project_type=campaign&project_timing=all&sort=trending">Podcasts, Blogs & Vlogs</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/tabletop-games?project_type=campaign&project_timing=all&sort=trending">Tabletop Games</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/video-games?project_type=campaign&project_timing=all&sort=trending">Video Games</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/web-series-tv-shows?project_type=campaign&project_timing=all&sort=trending">Web Series & TV Shows</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/writing-publishing?project_type=campaign&project_timing=all&sort=trending">Writing & Publicing</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div id="color8989">
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/culture?project_type=campaign&project_timing=all&sort=trending">Culture</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/environment?project_type=campaign&project_timing=all&sort=trending">Environment</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/human-rights?project_type=campaign&project_timing=all&sort=trending">Human Rights</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/human-rights?project_type=campaign&project_timing=all&sort=trending">Local Businesses</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/wellness?project_type=campaign&project_timing=all&sort=trending">Wellness</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <a href="">Our Top 10 finds</a>
+            </div>
+            <div>
+                <a href="">Team Fevrites</a>
+            </div>
+            <div>
+                <button id="searchfistnav"><img src="https://i.ibb.co/19LzSv5/search-logo.png" alt="search-logo"
+                        border="0"></button>
+            </div>
+            <div class="search_nav">
+                <input type="search" id="navsearch" placeholder="">
+            </div>
+        </div>
+        <div id="navbarindigogosecond">
+            <div>
+                <a href="">Start a Campaign</a>
+            </div>
+            <div>
+                <a href="">What We Do</a>
+            </div>
+            <div>
+                <a href="">|</a>
+            </div>
+            <div>
+                <a href="">Log In</a>
+            </div>
+            <div>
+                <a href="">Sign Up</a>
+            </div>
+        </div>
+    </div>
     
-    <div id="buttonDiv">
-        <button onclick="previous()"><</button>
-        <button onclick="next()">></button>
-        <p id="count">1 / 4</p>
-    </div>
 
-    <div id="findFirst">
-        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 36px; font-weight: 400; line-height: 54px; color: #2a2a2a;">Find it first on Indiegogo.</p>
-        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500; line-height: 24px; color: #2a2a2a;margin-top: -20px;">Indiegogo is where early adopters and innovation seekers find lively, imaginative tech before it hits the mainstream.</p>
-
-        <div id="findButton">
-            <button onclick="">SIGN UP NOW</button>
-            <button onclick="learn()">LEARN MORE</button>
-        </div>
-    </div>
-
-
-
-
-    <div id="head1" >
-        <p>Popular Projects</p>
-        <div>
-            <button onclick="previous2()"><</button>
-            <button onclick="next2()">></button>
-        </div>
-    </div>
-
-
-    <div id="container2">
-        <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
-            <div id="box1">
-                <img src="https://lh3.googleusercontent.com/bykJreOqA6opMNI_9IAS6e5DYRrnuYAgqS_t46nI-gnze1CkM7rjKFUDSdZiECrWMy8UYTBbmGuFC72HCvzPKG8gO-cFxrIQkE9MXRK6ZhkmEX4I-dRG2Us4ZcS1uns7UCgvWeq_Bw=w2400" alt="">
+    <div id="indegogohome">
+        <a href="https://www.indiegogo.com/projects/last-charging-cable-power-bank-you-ll-ever-need#/">
+            <div id="slidshow" >
+                <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1660248119/xlo6p2xtbov5ethy5fte.png" alt="">
+                <div id="title">
+                    <p id="t1" style="font-size: 14px; font-weight: 600;line-height: 21px;">FEATURED</p>
+                    <p id="t2" style="font-weight: 700; font-size: 16px; line-height: 24px;">Indiegogo & StartEngine Team Up to Help Entrepreneurs Raise More Capital</p>
+                    <p id="t3" style="font-size: 16px; font-weight: 500; line-height: 24px;" >Learn how entrepreneurs can use equity crowdfunding to access more capital after their Indiegogo campaign.</p>
+                    <p id="t4" style="font-weight: 700; font-size: 12px; line-height: 18px;">LEARN MORE</p>
+                </div>
+               
             </div>
         </a>
-
-
-        <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
-            <div id="box2">
-                <img src="https://lh3.googleusercontent.com/N4Z-FIHse8FjreAu_-1Y6xss7dYKmQqLXkFgT_Lu0tZ0icyB7miTInsWXrAHfFzDG8ELMcN5LjK_BNBorSdSZ507OqTe2lNitsw-5-O-KP4bTvWYM7mT3mWIhixq3FkWa-IcRZmjpg=w2400" alt="">
-            </div>
-        </a>
-
-        <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
-            <div id="box3">
-                <img src="https://lh3.googleusercontent.com/6TjCF42iybiBYFZ9N4UC868iHarr6MHOyt2QLjAViyeaQQpSZgVbqz8vL-h_h1_iBpHU59QWMugCnF73os-i_OK08t0IMe9X-daWpre6-ULX6SNjeUlapRfj8rg6Rwvp2Jb5ybSEcw=w2400" alt="">
-            </div>
-        </a>
-
-        <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
-            <div id="box4">
-                <img src="https://lh3.googleusercontent.com/0xM6CT6NHLqrgDUPikvEk15kNn_gKNk_GaINjaDuV5_bKco7CR3bPhaJ1i5bv-lU4Zxa7Ii5JL5Lw9zLoivvxbGWduyYypEWgrINQznwIikQlezc1Ammh56CCFe66cE29KckInUPlw=w2400" alt="">
-            </div>
-        </a>
-
-
-    </div>
-
-    <div id="container3" onclick="container3()">
-        <div>
-            <img src="https://lh3.googleusercontent.com/zyKw27SRyWgh_52eGVl9A3IbJlqhG_Bsl4EX0M83VLkWjJABleHUp0M4OtR2blKi-BdYJEZNvob_Sk6bmayqVUN-AMOjhsR4MQz2La07Ru3sbaLwdi2ULZShuXhxK4L6FgoxF-FKUQ=w2400"
-                alt="">
-            <div>
-                <p>Our roundup for standout projects</p>
-                <p>SEE THE COLLECTION ></p>
-            </div>
-        </div>
-
-        <div>
-            <img src="https://lh3.googleusercontent.com/D4J3AUeh7nMvHgm7QsJDB_UCmHJAv8FyLA7xh9RT8YcYXh9DCM62ObIY-SawOWlpM8FptPytAn6yLgG4P3PXXG6qRgtKB0zU-yivfEF9DzcmhIriIpV_UrakbZpdPOn0XKBWcW3ktA=w2400"
-                alt="">
-            <div>
-                <p>Techoss S4200 & more team favorites</p>
-                <p>SEE THE COLLECTION ></p>
-            </div>
-        </div>
-
-        <div>
-            <img src="https://lh3.googleusercontent.com/upTuqp_xQmrkOc5DTa2aeTh6rd6LMt62WC-qjOMLM4tG_qiTZ1mkGyvmre2tflNxTlnlNxBlfCuas1UB6o7qMpAFKBceeiYPf6K1ctQPLoXNKvdYgiKDFNzpZbNkewbfoVY_lC8V6g=w2400"
-                alt="">
-            <div>
-                <p>Check out these innovative steals</p>
-                <p>SEE THE COLLECTION ></p>
-            </div>
-        </div>
-
-        <div>
-            <img src="https://lh3.googleusercontent.com/hLGGEmiL720tjUoFbWOwF9IymIXnhRIrxk7NTv9f8lD5ek-UEDOPj0e8SA7L6qh3jOSPk5kEyUjI8ZzahRqBIk8mUq5VNgCPMj0-7O7kJB5DcvQJi_SvLMUr9r0vZr7rFsJg7ElhWA=w2400"
-                alt="">
-            <div>
-                <p>These campaingns could be in your hands quickly</p>
-                <p>SEE THE COLLECTION ></p>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="backthepro" onclick="crowdfunding()">
-        <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.3,f_auto/homepage/cf-bg-desktop-lg.jpg" alt="">
-    </div>
-
-    <div id="backtheprotxt" onclick="crowdfunding()">
-        <img src="https://lh3.googleusercontent.com/OLbASQNQC7lAOtSeghnXJxodAXz12aOiPlnYWruh7oNT3smtktdpXQPuFbNbzfS6WXHQQF-IyzEP8pOsXsCTUpURjzwz34PbhlPr3NrGH8-U3cxKOcAge4HJj4gkWiZTqmgCNtMSgg=w2400" alt="">
-    </div>
-
-    <a href="https://www.indiegogo.com/about/what-we-do" id="learnlink">LEARN ABOUT CROWDFUNDING ></a>
-
-
-
-
-
-
-
-
-
-    <div id="cateint">
-        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 400; line-height: 54px; color: #2a2a2a;">Which categories interest you?</p>
-        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500; line-height: 24px; color: #2a2a2a;margin-top: -20px;">Discover projects just for you and get great recommendations when you select your interests.</p>
-
-        <div id="cateintButton">
-            <button onclick="">SIGN UP AND SELECT INTERESTS</button>
-        </div>
-
-        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500; line-height: 24px; color: #2a2a2a;">Or explore our top categories</p>
-    </div>
-
-    <div id="pinkIcon">
-        <div style="margin-top: -5px;">
-            <img src="https://lh3.googleusercontent.com/dM8_swdgw6YRyRqgqMud8uGZ5wYlieTlNY7jg2zBASqbGXQ0YOOQQMSMPxAnqDZZ83c97NWoPQlf881I0Ggzod7sMHh76N-9Wxqsf3AUxuIUyqEgep7OS6WFch3BwMtC9IKI3F6j9Q=w2400" alt="" style="height: 87%; margin-top: 9%;">
-        </div>
-        <div>
-            <img src="https://lh3.googleusercontent.com/bRDwLqgSWl94kiKq69jBaWz_ws8Q0KvbmWEDvO4VIuXJYU9JY51RGyW0za0Hn6nbmeBXUjvfrsFMR_hm6xkbCqQpwiARZMvb93wvxUUid9eMXmUjzNmM16HZIdNh6ex7jtB9vk1r4g=w2400" alt="">
-        </div>
-        <div>
-            <img src="https://lh3.googleusercontent.com/FWgicuVAFZ7oQ30ZWcs1yX8exF5ry_b1nVS03bwFg7plAPvunlwrErFZpqyNE85REy9FqeTkAzK11z_bnNMgF9WCZgpYBlj0TfaUmJ1TtL9wpKU31I1swM54PRhnxGYoyZ4FxLhUFA=w2400" alt="">
-        </div>
-        <div>
-            <img src="https://lh3.googleusercontent.com/wK3B3Zc1jIkspQLJDVkSBppfwRTXPDXmMjBL_SSYOezB570_hA3SbSehvkLz_WnvJ2x5zenAoeNlwmTY25OvYnG0zU6i8ma3ENMRjQ4CkKHDdPOajvmxKB1z_v_jzypMx6Sfv6ULPg=w2400" alt="">
-        </div>
-        <div>
-            <img src="https://lh3.googleusercontent.com/aboyZBtkjyu3r2lZGa3T1aPZ3_7L4sZZzX2eqeHtl9Ulm5GSEErkZd0LhtWTnh41ODODpCIcYKaGz-CqlB0C0mWEGnerLOY4rhjZvYUfjcWxoaxsKMk23tcWC7xAeXpZ9wiOJVH5iQ=w2400" alt="">
-        </div>
-        <div>
-            <img src="https://lh3.googleusercontent.com/TIYtqbBotbfZoI642S3C7lL7s8lRlixN5K7YLlm-Qjrva4xe0qBViC2mJtd_GH9mzF2xFDx1dNrxcEgl9pFEYClOhdhiBsKC-Vgj6hrlk_JGznQBTOGTjVR6R-XPBFEKOArurHkZbA=w2400" alt="">
-        </div>
-    </div>
-
-    <div id="review">
-        <img src="https://lh3.googleusercontent.com/dhMKKE0_QPSsKHI2PpinpKIvQZsZAmtoyohF4M8S6maRP9Ci4WOq376zgJKyBFIu_IC0GhZAiLSK85vHXNzgMmj4_wqm272TzGo-l4VX-r1vJ6vQvij3q1hBQ3myrf6gGm16zlxVkw=w2400" alt="">
-    </div>
-    <div style="width: 1218px; display: flex; justify-content: center;margin: auto;margin-top: 25px;cursor: pointer;">
-        <img src="https://lh3.googleusercontent.com/nLH36Do0qJCEu6eG4_-DlbFlxOtahDREfP-yDn1C0Ez710KyLkqOGS0v7IL2LCuH7OAKmY47H4PywrYIa6xaXSWea1BTAZsWhVOSNFs7cTzNzobwU7ZaONUhqPVet76Y2AFx7oPk6w=w2400" alt="" style="width: 100%;">
-    </div>
-    <div style="width: 1218px; display: flex;margin: auto;" id="learnmore" >
-        <div style="width: 34%;"><a href="https://go.indiegogo.com/blog/2022/08/5-affordable-new-gadgets-that-are-under-100.html?utm_source=banner&utm_medium=wordpress&utm_campaign=from-the-journal">LEARN MORE ></a></div>
-        <div style="width: 34%;"><a href="https://go.indiegogo.com/blog/2022/08/5-affordable-new-gadgets-that-are-under-100.html?utm_source=banner&utm_medium=wordpress&utm_campaign=from-the-journal">LEARN MORE ></a></div>
-        <div><a href="https://go.indiegogo.com/blog/2022/08/5-affordable-new-gadgets-that-are-under-100.html?utm_source=banner&utm_medium=wordpress&utm_campaign=from-the-journal">LEARN MORE ></a></div>
-    </div>
-
-    <div id="last">
-        <div>
-            <img src="https://c4.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_275,g_center,q_auto:best,dpr_1.3,f_auto/homepage/crowdfunding-crowdsurfing_base.svg" alt="">
-        </div>
-        <div id="clever">
-            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 38px; font-weight: 400; line-height: 54px; color: #2a2a2a; margin-left: 50px;">Clever Things For Curious Humans™</p>
-            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 500; line-height: 24px; color: #2a2a2a;margin-left: 50px;">There's no better place to start the hunt for something new and special. Begin on Indiegogo to find clever and unconventional things that solve everyday problems large and small.</p>
     
-            <div id="cleverButton" style="margin-left: 300px;">
-                <button onclick="signup()">SIGN UP NOW</button>
+        
+        <div id="buttonDiv">
+            <button onclick="previous()"><</button>
+            <button onclick="next()">></button>
+            <p id="count">1 / 4</p>
+        </div>
+    
+        <div id="findFirst">
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 36px; font-weight: 400; line-height: 54px; color: #2a2a2a;">Find it first on Indiegogo.</p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500; line-height: 24px; color: #2a2a2a;margin-top: -20px;">Indiegogo is where early adopters and innovation seekers find lively, imaginative tech before it hits the mainstream.</p>
+    
+            <div id="findButton">
+                <button onclick="">SIGN UP NOW</button>
                 <button onclick="learn()">LEARN MORE</button>
             </div>
         </div>
+    
+    
+    
+    
+        <div id="head1" >
+            <p>Popular Projects</p>
+            <div>
+                <button onclick="previous2()"><</button>
+                <button onclick="next2()">></button>
+            </div>
+        </div>
+    
+    
+        <div id="container2">
+            <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
+                <div id="box1">
+                    <img src="https://lh3.googleusercontent.com/bykJreOqA6opMNI_9IAS6e5DYRrnuYAgqS_t46nI-gnze1CkM7rjKFUDSdZiECrWMy8UYTBbmGuFC72HCvzPKG8gO-cFxrIQkE9MXRK6ZhkmEX4I-dRG2Us4ZcS1uns7UCgvWeq_Bw=w2400" alt="">
+                </div>
+            </a>
+    
+    
+            <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
+                <div id="box2">
+                    <img src="https://lh3.googleusercontent.com/N4Z-FIHse8FjreAu_-1Y6xss7dYKmQqLXkFgT_Lu0tZ0icyB7miTInsWXrAHfFzDG8ELMcN5LjK_BNBorSdSZ507OqTe2lNitsw-5-O-KP4bTvWYM7mT3mWIhixq3FkWa-IcRZmjpg=w2400" alt="">
+                </div>
+            </a>
+    
+            <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
+                <div id="box3">
+                    <img src="https://lh3.googleusercontent.com/6TjCF42iybiBYFZ9N4UC868iHarr6MHOyt2QLjAViyeaQQpSZgVbqz8vL-h_h1_iBpHU59QWMugCnF73os-i_OK08t0IMe9X-daWpre6-ULX6SNjeUlapRfj8rg6Rwvp2Jb5ybSEcw=w2400" alt="">
+                </div>
+            </a>
+    
+            <a href="https://www.indiegogo.com/projects/the-exiled-by-wesley-snipes/hmco">
+                <div id="box4">
+                    <img src="https://lh3.googleusercontent.com/0xM6CT6NHLqrgDUPikvEk15kNn_gKNk_GaINjaDuV5_bKco7CR3bPhaJ1i5bv-lU4Zxa7Ii5JL5Lw9zLoivvxbGWduyYypEWgrINQznwIikQlezc1Ammh56CCFe66cE29KckInUPlw=w2400" alt="">
+                </div>
+            </a>
+    
+    
+        </div>
+    
+        <div id="container3" onclick="container3()">
+            <div>
+                <img src="https://lh3.googleusercontent.com/zyKw27SRyWgh_52eGVl9A3IbJlqhG_Bsl4EX0M83VLkWjJABleHUp0M4OtR2blKi-BdYJEZNvob_Sk6bmayqVUN-AMOjhsR4MQz2La07Ru3sbaLwdi2ULZShuXhxK4L6FgoxF-FKUQ=w2400"
+                    alt="">
+                <div>
+                    <p>Our roundup for standout projects</p>
+                    <p>SEE THE COLLECTION ></p>
+                </div>
+            </div>
+    
+            <div>
+                <img src="https://lh3.googleusercontent.com/D4J3AUeh7nMvHgm7QsJDB_UCmHJAv8FyLA7xh9RT8YcYXh9DCM62ObIY-SawOWlpM8FptPytAn6yLgG4P3PXXG6qRgtKB0zU-yivfEF9DzcmhIriIpV_UrakbZpdPOn0XKBWcW3ktA=w2400"
+                    alt="">
+                <div>
+                    <p>Techoss S4200 & more team favorites</p>
+                    <p>SEE THE COLLECTION ></p>
+                </div>
+            </div>
+    
+            <div>
+                <img src="https://lh3.googleusercontent.com/upTuqp_xQmrkOc5DTa2aeTh6rd6LMt62WC-qjOMLM4tG_qiTZ1mkGyvmre2tflNxTlnlNxBlfCuas1UB6o7qMpAFKBceeiYPf6K1ctQPLoXNKvdYgiKDFNzpZbNkewbfoVY_lC8V6g=w2400"
+                    alt="">
+                <div>
+                    <p>Check out these innovative steals</p>
+                    <p>SEE THE COLLECTION ></p>
+                </div>
+            </div>
+    
+            <div>
+                <img src="https://lh3.googleusercontent.com/hLGGEmiL720tjUoFbWOwF9IymIXnhRIrxk7NTv9f8lD5ek-UEDOPj0e8SA7L6qh3jOSPk5kEyUjI8ZzahRqBIk8mUq5VNgCPMj0-7O7kJB5DcvQJi_SvLMUr9r0vZr7rFsJg7ElhWA=w2400"
+                    alt="">
+                <div>
+                    <p>These campaingns could be in your hands quickly</p>
+                    <p>SEE THE COLLECTION ></p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div id="backthepro" onclick="crowdfunding()">
+            <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.3,f_auto/homepage/cf-bg-desktop-lg.jpg" alt="">
+        </div>
+    
+        <div id="backtheprotxt" onclick="crowdfunding()">
+            <img src="https://lh3.googleusercontent.com/OLbASQNQC7lAOtSeghnXJxodAXz12aOiPlnYWruh7oNT3smtktdpXQPuFbNbzfS6WXHQQF-IyzEP8pOsXsCTUpURjzwz34PbhlPr3NrGH8-U3cxKOcAge4HJj4gkWiZTqmgCNtMSgg=w2400" alt="">
+        </div>
+    
+        <a href="https://www.indiegogo.com/about/what-we-do" id="learnlink">LEARN ABOUT CROWDFUNDING ></a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <div id="cateint">
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 400; line-height: 54px; color: #2a2a2a;">Which categories interest you?</p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500; line-height: 24px; color: #2a2a2a;margin-top: -20px;">Discover projects just for you and get great recommendations when you select your interests.</p>
+    
+            <div id="cateintButton">
+                <button onclick="">SIGN UP AND SELECT INTERESTS</button>
+            </div>
+    
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 500; line-height: 24px; color: #2a2a2a;">Or explore our top categories</p>
+        </div>
+    
+        <div id="pinkIcon">
+            <div style="margin-top: -5px;">
+                <img src="https://lh3.googleusercontent.com/dM8_swdgw6YRyRqgqMud8uGZ5wYlieTlNY7jg2zBASqbGXQ0YOOQQMSMPxAnqDZZ83c97NWoPQlf881I0Ggzod7sMHh76N-9Wxqsf3AUxuIUyqEgep7OS6WFch3BwMtC9IKI3F6j9Q=w2400" alt="" style="height: 87%; margin-top: 9%;">
+            </div>
+            <div>
+                <img src="https://lh3.googleusercontent.com/bRDwLqgSWl94kiKq69jBaWz_ws8Q0KvbmWEDvO4VIuXJYU9JY51RGyW0za0Hn6nbmeBXUjvfrsFMR_hm6xkbCqQpwiARZMvb93wvxUUid9eMXmUjzNmM16HZIdNh6ex7jtB9vk1r4g=w2400" alt="">
+            </div>
+            <div>
+                <img src="https://lh3.googleusercontent.com/FWgicuVAFZ7oQ30ZWcs1yX8exF5ry_b1nVS03bwFg7plAPvunlwrErFZpqyNE85REy9FqeTkAzK11z_bnNMgF9WCZgpYBlj0TfaUmJ1TtL9wpKU31I1swM54PRhnxGYoyZ4FxLhUFA=w2400" alt="">
+            </div>
+            <div>
+                <img src="https://lh3.googleusercontent.com/wK3B3Zc1jIkspQLJDVkSBppfwRTXPDXmMjBL_SSYOezB570_hA3SbSehvkLz_WnvJ2x5zenAoeNlwmTY25OvYnG0zU6i8ma3ENMRjQ4CkKHDdPOajvmxKB1z_v_jzypMx6Sfv6ULPg=w2400" alt="">
+            </div>
+            <div>
+                <img src="https://lh3.googleusercontent.com/aboyZBtkjyu3r2lZGa3T1aPZ3_7L4sZZzX2eqeHtl9Ulm5GSEErkZd0LhtWTnh41ODODpCIcYKaGz-CqlB0C0mWEGnerLOY4rhjZvYUfjcWxoaxsKMk23tcWC7xAeXpZ9wiOJVH5iQ=w2400" alt="">
+            </div>
+            <div>
+                <img src="https://lh3.googleusercontent.com/TIYtqbBotbfZoI642S3C7lL7s8lRlixN5K7YLlm-Qjrva4xe0qBViC2mJtd_GH9mzF2xFDx1dNrxcEgl9pFEYClOhdhiBsKC-Vgj6hrlk_JGznQBTOGTjVR6R-XPBFEKOArurHkZbA=w2400" alt="">
+            </div>
+        </div>
+    
+        <div id="review">
+            <img src="https://lh3.googleusercontent.com/dhMKKE0_QPSsKHI2PpinpKIvQZsZAmtoyohF4M8S6maRP9Ci4WOq376zgJKyBFIu_IC0GhZAiLSK85vHXNzgMmj4_wqm272TzGo-l4VX-r1vJ6vQvij3q1hBQ3myrf6gGm16zlxVkw=w2400" alt="">
+        </div>
+        <div style="width: 1218px; display: flex; justify-content: center;margin: auto;margin-top: 25px;cursor: pointer;">
+            <img src="https://lh3.googleusercontent.com/nLH36Do0qJCEu6eG4_-DlbFlxOtahDREfP-yDn1C0Ez710KyLkqOGS0v7IL2LCuH7OAKmY47H4PywrYIa6xaXSWea1BTAZsWhVOSNFs7cTzNzobwU7ZaONUhqPVet76Y2AFx7oPk6w=w2400" alt="" style="width: 100%;">
+        </div>
+        <div style="width: 1218px; display: flex;margin: auto;" id="learnmore" >
+            <div style="width: 34%;"><a href="https://go.indiegogo.com/blog/2022/08/5-affordable-new-gadgets-that-are-under-100.html?utm_source=banner&utm_medium=wordpress&utm_campaign=from-the-journal">LEARN MORE ></a></div>
+            <div style="width: 34%;"><a href="https://go.indiegogo.com/blog/2022/08/5-affordable-new-gadgets-that-are-under-100.html?utm_source=banner&utm_medium=wordpress&utm_campaign=from-the-journal">LEARN MORE ></a></div>
+            <div><a href="https://go.indiegogo.com/blog/2022/08/5-affordable-new-gadgets-that-are-under-100.html?utm_source=banner&utm_medium=wordpress&utm_campaign=from-the-journal">LEARN MORE ></a></div>
+        </div>
+    
+        <div id="last">
+            <div>
+                <img src="https://c4.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_275,g_center,q_auto:best,dpr_1.3,f_auto/homepage/crowdfunding-crowdsurfing_base.svg" alt="">
+            </div>
+            <div id="clever">
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 38px; font-weight: 400; line-height: 54px; color: #2a2a2a; margin-left: 50px;">Clever Things For Curious Humans™</p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 500; line-height: 24px; color: #2a2a2a;margin-left: 50px;">There's no better place to start the hunt for something new and special. Begin on Indiegogo to find clever and unconventional things that solve everyday problems large and small.</p>
+        
+                <div id="cleverButton" style="margin-left: 300px;">
+                    <button onclick="signup()">SIGN UP NOW</button>
+                    <button onclick="learn()">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div id="indegogobottom">
+        <div id="bottomfirstdiv">
+            <div>
+                <div id="firsttitlebottom">EXPLORE</div>
+                <div>
+                    <a href="https://www.indiegogo.com/about/what-we-do">What We Do</a>
+                </div>
+                <div>
+                    <a
+                        href="https://www.indiegogo.com/explore/all?project_type=campaign&project_timing=all&sort=trending">Funding</a>
+                </div>
+            </div>
+            <div>
+                <div id="firsttitlebottom">
+                    ABOUT
+                </div>
+                <div>
+                    <a href="https://www.indiegogo.com/about/our-story">About Us</a>
+                </div>
+                <div>
+                    <a href="https://go.indiegogo.com/blog">Blog</a>
+                </div>
+                <div>
+                    <a href="https://learn.indiegogo.com/trust/">Trust & Safty</a>
+                </div>
+                <div>
+                    <a href="https://support.indiegogo.com/hc/en-us">Help & Support</a>
+                </div>
+                <div>
+                    <a href="https://www.indiegogo.com/contact/press">Press</a>
+                </div>
+                <div>
+                    <a href="https://www.indiegogo.com/careers">Carrears</a>
+                </div>
+                <div>
+                    <a href="https://support.indiegogo.com/hc/en-us/requests/new?ticket_form_id=45336">Contacts</a>
+                </div>
+            </div>
+            <div>
+                <div id="firsttitlebottom">ENTREPRENEURS</div>
+                <div>
+                    <a href="https://entrepreneur.indiegogo.com/how-it-works/">How it Works</a>
+                </div>
+                <div>
+                    <a
+                        href="https://entrepreneur.indiegogo.com/how-it-works/indiegogo-vs-kickstarter/?utm_campaign=iggvsks&utm_content=howitworks&utm_medium=howitworks&utm_source=igg">Indiegogo
+                        vs. Kickstarter</a>
+                </div>
+                <div>
+                    <a href="https://entrepreneur.indiegogo.com/education/">Education Center</a>
+                </div>
+                <div>
+                    <a href="https://entrepreneur.indiegogo.com/directory/">Experts Directory</a>
+                </div>
+                <div>
+                    <a
+                        href="https://support.indiegogo.com/hc/en-us/articles/204456408-Fees-Pricing-for-Campaigners-How-much-does-Indiegogo-cost-">Fees</a>
+                </div>
+                <div>
+                    <a href="https://enterprise.indiegogo.com/">Enterprises</a>
+                </div>
+                <div>
+                    <a href="https://entrepreneur.indiegogo.com/how-it-works/indiegogo-china/">China</a>
+                </div>
+            </div>
+            <div id="bottomformlogin">
+                <div>
+                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/YBvySJp/bottomform-img.png"
+                            alt="bottomform-img" border="0"></a>
+                </div>
+                <div>
+                    <input type="email" id="bottomforminput" placeholder="Your Email Address">
+                </div>
+                <div id="checkbox">
+                    <div>
+                        <input type="checkbox" id="terms" name="terms" value="True">
+                    </div>
+                    <div id="checkboxp">
+                        <p>I agree to the <a href="https://www.indiegogo.com/about/terms">Terms of Use</a> and have read and understand the <a href="https://indiegogo.trsnd.co/policies">Privacy Policy</a></p>
+                    </div>
+                </div>
+                <div>
+                    <a href="./login.html"><button id="signmeup">SIGN ME UP</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="socialsiteconeect">
+            <div><button>₹Indian Rupee (INR)</button></div>
+            <div><a href="https://www.facebook.com/Indiegogo"><img src="https://i.ibb.co/6bgScBT/bottom-fb-logo.png" alt="bottom-fb-logo" border="0"></a></div>
+            <div>
+                <a href="https://twitter.com/indiegogo"><img src="https://i.ibb.co/p06S0zP/bottomtwitterlogo.png" alt="bottomtwitterlogo" border="0"></a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/indiegogo"><img src="https://i.ibb.co/xCWgCZG/youtubelogobottom.png" alt="youtubelogobottom" border="0"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/indiegogo/"><img src="https://i.ibb.co/SyH7cPD/instabottomlogo.png" alt="instabottomlogo" border="0"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/company/indiegogo"><img src="https://i.ibb.co/jwwPnj2/linkdenlogobottom.png" alt="linkdenlogobottom" border="0"></a>
+            </div>
+            <div>
+                <a href="https://open.spotify.com/show/7bEdWFbpv3rKHotpDzcCV4?si=6a5cee9902214695&nd=1"><img src="https://i.ibb.co/L6tz9h8/bottomspootify.png" alt="bottomspootify" border="0"></a>
+            </div>
+        </div>
+        <div><hr></div>
+        <div>
+            <div>
+                <a href="https://www.indiegogo.com/about/terms">Terms of Use</a>
+            </div>
+            <div>
+                <a href="https://indiegogo.trsnd.co/policies">Privacy Policy</a>
+            </div>
+            <div>
+                <a href="https://indiegogo.trsnd.co/policies">Cookies Policy</a>
+            </div>
+            <div>
+                <a href="">Do Not Sell My Personal Information</a>
+            </div>
+            <div>
+                <a href="https://support.indiegogo.com/hc/en-us/articles/360057893771-Accessibility-Notice">Accessibility</a>
+            </div>
+            <div>
+                <a href="">© 2022 Indiegogo, Inc. All Rights Reserved</a>
+            </div>
+        </div>
+    </div>
+   
 </body>
 </html>
 
@@ -886,3 +1206,4 @@ let divArr=[
 
 </script>
 
+<script src="./navbar.js"></script>
