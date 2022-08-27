@@ -1,0 +1,100 @@
+#indegogobottom {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#bottomfirstdiv {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left:4%;
+    padding-right: 4%;
+}
+
+#bottomfirstdiv>div>div>a {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+#bottomfirstdiv>div>div>a:hover {
+    text-decoration: underline;
+    color: #e51075;
+}
+
+#firsttitlebottom {
+    line-height: 30px;
+    color: #6a6a6a;
+    font-size: 20px;
+}
+#bottomforminput{
+    padding: 10px;
+    font-size: 15px;
+    width: 96%;
+}
+#terms{
+    width: 20px;
+    height: 20px;
+}
+#checkbox{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#checkbox>div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+#checkboxp{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    color: #2a2a2a;
+}
+#checkboxp>p>a{
+    color: #e51075;
+}
+#bottomformlogin>div:last-child>a>button{
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    background-color: #e51075;
+    border: none;
+    color: white;
+}
+#socialsiteconeect{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#socialsiteconeect>div>button{
+    background-color: white;
+    padding:10px;
+    border: 1px solid #7a7a7a;
+    cursor: pointer;
+    width: 200px;
+}
+#socialsiteconeect>div>button:hover{
+    border: 1px solid #2a2a2a;
+}
+hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#indegogobottom>div:last-child{
+    display: flex;
+    gap: 20px;
+
+}
+#indegogobottom>div:last-child>div>a{
+    text-decoration: none;
+    color: #6a6a6a;
+}
+#indegogobottom>div:last-child>div>a:hover{
+    text-decoration: underline;
+}
