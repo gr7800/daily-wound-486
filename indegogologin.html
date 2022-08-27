@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndegogoLogin</title>
+    <link rel="icon" type="image/x-icon"
+          href="https://g2.iggcdn.com/assets/favicon/favicon-64-f86781f1d221c3eea847e861d0b2b631f0cd49bbdb2cac0b0ed052664fa2380c.png">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./bottompart.css">
+    <style>
+        body{
+           margin: 0px;
+           padding: 0px;
+        }
+        #indegogoform {
+            width: 35%;
+            margin: auto;
+            background-color: white;
+            border: 1px solid #757575;
+            padding: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            margin-bottom: 50px;
+        }
+
+        #indegogoform>div:first-child {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #indegogoform>div>h1 {
+            text-align: center;
+            line-height: 0px;
+        }
+
+        #indegogoform>div>h3 {
+            text-align: center;
+            line-height: 0px;
+            color: #757575;
+            margin-bottom: 20px;
+            line-height: 10px;
+            font-weight: normal;
+        }
+
+        #indegogoform>div>label {
+            font-size: 20px;
+            color: #757575;
+        }
+        #indegogoform>div:first-child>input{
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        #indegogoform>div:first-child>#password{
+            margin: 0px;
+        }
+        #indegogoform>div:first-child>input+a{
+            width: 100%;
+            text-align: right;
+            color: #757575;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+        #checkboxa {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        #checkboxa>div:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+
+        #checkboxpa {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: normal;
+            color: #757575
+
+        }
+
+        #checkboxpa>p>a {
+            color: #e51075;
+            text-decoration: underline;
+        }
+        #indegogoform>:nth-child(2)>div>button{
+            padding: 10px;
+            width: 100%;
+            background-color: #e51075;
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        #indegogoform>:nth-child(2)>div{
+            text-align: center;
+        }
+        #fb{
+            font-size: 20px;
+            width: 100%;
+            background-color: #405c9d;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        #indegogoform>div:last-child>p{
+            text-align: center;
+            font-size: 20px;
+            font-weight: normal;
+            color: #757575;
+        }
+        #indegogoform>div:last-child>p>a{
+            color: black;
+        }
+       
+ 
+
+    </style>
+</head>
+
+<body>
+    <div id="navbarindigogo">
+        <div id="navbarindigogofirst">
+            <div>
+                <a href="./index.html"><img src="https://i.ibb.co/r3YNyzz/INDIGOGOLOGO.png" alt="INDIGOGOLOGO"
+                        border="0"></a>
+            </div>
+            <div class="dropdown">
+                <Button class="dropbtn" id="dropbtn">Explore v</Button>
+
+                <div id="myDropdown" class="dropdown-content">
+
+                    <div>
+                        <div>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/5rngnTH/Explore-our-project.png"
+                                    alt="Explore-our-project" border="0"></a>
+                        </div>
+                        <div>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/rQQYzhn/Our-Top-10-finds.png"
+                                    alt="Our-Top-10-finds" border="0"></a>
+                        </div>
+                        <div>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/0hMWG6W/Team-Fevrites.png"
+                                    alt="Team-Fevrites" border="0"></a>
+                        </div>
+                        <div>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/pnp6N3D/spend-under-1000.png"
+                                    alt="spend-under-1000" border="0"></a>
+                        </div>
+                        <div>
+                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/Fqf24K4/join-the-convo.png"
+                                    alt="join-the-convo" border="0"></a>
+                        </div>
+                    </div>
+                    <div id="btmdroppart">
+                        <div>
+                            <div>
+                                <a
+                                    href="https://www.indiegogo.com/explore/tech-innovation?project_type=campaign&project_timing=all&sort=trending">TECH
+                                    & INNOVATION</a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://www.indiegogo.com/explore/creative-works?project_type=campaign&project_timing=all&sort=trending">CREATIVE
+                                    WORKS</a>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://www.indiegogo.com/explore/community-projects?project_type=campaign&project_timing=all&sort=trending">COMMUNITY
+                                    PROJECTS</a>
+                            </div>
+                        </div>
+                        <div >
+                            <div>
+                                <div id="color8989">
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/audio?project_type=campaign&project_timing=all&sort=trending">Audio</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/camera-gear?project_type=campaign&project_timing=all&sort=trending">Camera Gear</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/education?project_type=campaign&project_timing=all&sort=trending">Education</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/energy-green-tech?project_type=campaign&project_timing=all&sort=trending">Energy & Green Tech</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/fashion-wearables?project_type=campaign&project_timing=all&sort=trending">Fashion & Wearables</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/food-beverages?project_type=campaign&project_timing=all&sort=trending">Food & Beverages</a>
+                                    </div>
+                                </div>
+                                <div id="color8989">
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/health-fitness?project_type=campaign&project_timing=all&sort=trending">Health & Fitness</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/home?project_type=campaign&project_timing=all&sort=trending">Home</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/phones-accessories?project_type=campaign&project_timing=all&sort=trending">Phones & Accessories</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/productivity?project_type=campaign&project_timing=all&sort=trending">Productivity</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/transportation?project_type=campaign&project_timing=all&sort=trending">Transportation</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/travel-outdoors?project_type=campaign&project_timing=all&sort=trending">Travel & Outdoors</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div id="color8989">
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/art?project_type=campaign&project_timing=all&sort=trending">Art</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/comics?project_type=campaign&project_timing=all&sort=trending">Comics</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/dance-theater?project_type=campaign&project_timing=all&sort=trending">Dance & Theater</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/film?project_type=campaign&project_timing=all&sort=trending">Film</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/music?project_type=campaign&project_timing=all&sort=trending">Music</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/photography?project_type=campaign&project_timing=all&sort=trending">Photography</a>
+                                    </div>
+                                </div>
+                                <div id="color8989">
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/podcasts-blogs-vlogs?project_type=campaign&project_timing=all&sort=trending">Podcasts, Blogs & Vlogs</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/tabletop-games?project_type=campaign&project_timing=all&sort=trending">Tabletop Games</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/video-games?project_type=campaign&project_timing=all&sort=trending">Video Games</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/web-series-tv-shows?project_type=campaign&project_timing=all&sort=trending">Web Series & TV Shows</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/writing-publishing?project_type=campaign&project_timing=all&sort=trending">Writing & Publicing</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div id="color8989">
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/culture?project_type=campaign&project_timing=all&sort=trending">Culture</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/environment?project_type=campaign&project_timing=all&sort=trending">Environment</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/human-rights?project_type=campaign&project_timing=all&sort=trending">Human Rights</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/human-rights?project_type=campaign&project_timing=all&sort=trending">Local Businesses</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.indiegogo.com/explore/wellness?project_type=campaign&project_timing=all&sort=trending">Wellness</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <a href="">Our Top 10 finds</a>
+            </div>
+            <div>
+                <a href="">Team Fevrites</a>
+            </div>
+            <div>
+                <button id="searchfistnav"><img src="https://i.ibb.co/19LzSv5/search-logo.png" alt="search-logo"
+                        border="0"></button>
+            </div>
+            <div class="search_nav">
+                <input type="search" id="navsearch" placeholder="">
+            </div>
+        </div>
+        <div id="navbarindigogosecond">
+            <div>
+                <a href="">Start a Campaign</a>
+            </div>
+            <div>
+                <a href="">What We Do</a>
+            </div>
+            <div>
+                <a href="">|</a>
+            </div>
+            <div>
+                <a href="">Log In</a>
+            </div>
+            <div>
+                <a href="">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <div id="indegogoform">
+        <div>
+            <h1>Welcome back!</h1>
+            <h3>Log in to continue.</h3>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <a href="https://www.indiegogo.com/accounts/password/new">Forgot your password?</a>
+        </div>
+        
+        <div>
+            <div>
+                <button id="Signupindegogo" onclick="Indegoglogin()">LOG IN</button>
+            </div>
+            <div>
+                OR
+            </div>
+            <div id="fb">
+                <a href="https://www.facebook.com/v6.0/dialog/oauth?client_id=2392863781&redirect_uri=https%3A%2F%2Fwww.indiegogo.com%2Faccounts%2Fauth%2Ffacebook%2Fcallback&response_type=code&scope=email%2Cuser_friends&state=b020b2d1470a8526818e098a93f625cda64c64f20fb8d290"><img src="https://i.ibb.co/qr2VgJG/fboriginal.png" alt="fboriginal" border="0"></a>
+            </div>
+            <div>
+                <a href=""><img src="https://i.ibb.co/pjXqnDd/no-post-withou-your-permission.png" alt="no-post-withou-your-permission" border="0"></a>
+            </div>
+        </div>
+        <div>
+            <p>New to Indiegogo? <a href="./indegogosignup.html">Sign Up</a></p>
+        </div>
+    </div>
+    <div id="indegogobottom">
+        <div id="bottomfirstdiv">
+            <div>
+                <div id="firsttitlebottom">EXPLORE</div>
+                <div>
+                    <a href="https://www.indiegogo.com/about/what-we-do">What We Do</a>
+                </div>
+                <div>
+                    <a
+                        href="https://www.indiegogo.com/explore/all?project_type=campaign&project_timing=all&sort=trending">Funding</a>
+                </div>
+            </div>
+            <div>
+                <div id="firsttitlebottom">
+                    ABOUT
+                </div>
+                <div>
+                    <a href="https://www.indiegogo.com/about/our-story">About Us</a>
+                </div>
+                <div>
+                    <a href="https://go.indiegogo.com/blog">Blog</a>
+                </div>
+                <div>
+                    <a href="https://learn.indiegogo.com/trust/">Trust & Safty</a>
+                </div>
+                <div>
+                    <a href="https://support.indiegogo.com/hc/en-us">Help & Support</a>
+                </div>
+                <div>
+                    <a href="https://www.indiegogo.com/contact/press">Press</a>
+                </div>
+                <div>
+                    <a href="https://www.indiegogo.com/careers">Carrears</a>
+                </div>
+                <div>
+                    <a href="https://support.indiegogo.com/hc/en-us/requests/new?ticket_form_id=45336">Contacts</a>
+                </div>
+            </div>
+            <div>
+                <div id="firsttitlebottom">ENTREPRENEURS</div>
+                <div>
+                    <a href="https://entrepreneur.indiegogo.com/how-it-works/">How it Works</a>
+                </div>
+                <div>
+                    <a
+                        href="https://entrepreneur.indiegogo.com/how-it-works/indiegogo-vs-kickstarter/?utm_campaign=iggvsks&utm_content=howitworks&utm_medium=howitworks&utm_source=igg">Indiegogo
+                        vs. Kickstarter</a>
+                </div>
+                <div>
+                    <a href="https://entrepreneur.indiegogo.com/education/">Education Center</a>
+                </div>
+                <div>
+                    <a href="https://entrepreneur.indiegogo.com/directory/">Experts Directory</a>
+                </div>
+                <div>
+                    <a
+                        href="https://support.indiegogo.com/hc/en-us/articles/204456408-Fees-Pricing-for-Campaigners-How-much-does-Indiegogo-cost-">Fees</a>
+                </div>
+                <div>
+                    <a href="https://enterprise.indiegogo.com/">Enterprises</a>
+                </div>
+                <div>
+                    <a href="https://entrepreneur.indiegogo.com/how-it-works/indiegogo-china/">China</a>
+                </div>
+            </div>
+            <div id="bottomformlogin">
+                <div>
+                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/YBvySJp/bottomform-img.png"
+                            alt="bottomform-img" border="0"></a>
+                </div>
+                <div>
+                    <input type="email" id="bottomforminput" placeholder="Your Email Address">
+                </div>
+                <div id="checkbox">
+                    <div>
+                        <input type="checkbox" id="terms" name="terms" value="True">
+                    </div>
+                    <div id="checkboxp">
+                        <p>I agree to the <a href="https://www.indiegogo.com/about/terms">Terms of Use</a> and have read and understand the <a href="https://indiegogo.trsnd.co/policies">Privacy Policy</a></p>
+                    </div>
+                </div>
+                <div>
+                    <a href="./login.html"><button id="signmeup">SIGN ME UP</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="socialsiteconeect">
+            <div><button>₹Indian Rupee (INR)</button></div>
+            <div><a href="https://www.facebook.com/Indiegogo"><img src="https://i.ibb.co/6bgScBT/bottom-fb-logo.png" alt="bottom-fb-logo" border="0"></a></div>
+            <div>
+                <a href="https://twitter.com/indiegogo"><img src="https://i.ibb.co/p06S0zP/bottomtwitterlogo.png" alt="bottomtwitterlogo" border="0"></a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/indiegogo"><img src="https://i.ibb.co/xCWgCZG/youtubelogobottom.png" alt="youtubelogobottom" border="0"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/indiegogo/"><img src="https://i.ibb.co/SyH7cPD/instabottomlogo.png" alt="instabottomlogo" border="0"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/company/indiegogo"><img src="https://i.ibb.co/jwwPnj2/linkdenlogobottom.png" alt="linkdenlogobottom" border="0"></a>
+            </div>
+            <div>
+                <a href="https://open.spotify.com/show/7bEdWFbpv3rKHotpDzcCV4?si=6a5cee9902214695&nd=1"><img src="https://i.ibb.co/L6tz9h8/bottomspootify.png" alt="bottomspootify" border="0"></a>
+            </div>
+        </div>
+        <div><hr></div>
+        <div>
+            <div>
+                <a href="https://www.indiegogo.com/about/terms">Terms of Use</a>
+            </div>
+            <div>
+                <a href="https://indiegogo.trsnd.co/policies">Privacy Policy</a>
+            </div>
+            <div>
+                <a href="https://indiegogo.trsnd.co/policies">Cookies Policy</a>
+            </div>
+            <div>
+                <a href="">Do Not Sell My Personal Information</a>
+            </div>
+            <div>
+                <a href="https://support.indiegogo.com/hc/en-us/articles/360057893771-Accessibility-Notice">Accessibility</a>
+            </div>
+            <div>
+                <a href="">© 2022 Indiegogo, Inc. All Rights Reserved</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./navbar.js"></script>
+<script>
+    let userdata=JSON.parse(localStorage.getItem("indigigouser"))||[];
+    function Indegoglogin() {
+        
+        let Password= document.getElementById('password').value;
+        let Email= document.getElementById('email').value;
+
+        if(check(Email,Password)==true){
+            alert("User Login Succesfull!");
+            window.location.href="./index.html"
+        }else{
+            alert("User Authentication Failed");
+        }
+    }
+
+    let check=(Email,Password)=>{
+    let gt=JSON.parse(localStorage.getItem("indigigouser"))||[];
+    let res=false
+       gt.forEach(element => {
+          if(element.email==Email&&element.password==Password){
+            res=true;
+          }
+       });
+       return res
+       
+    }
+
+</script>
