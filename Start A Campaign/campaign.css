@@ -10,14 +10,14 @@
     /* border: 1px dotted black; */
 }
 
-#imgdiv {
+#imgdiv{
     width: 30%;
     height: auto;
     /* border: 1px solid red; */
     margin: auto;
 }
 
-img {
+#imgdiv>img{
     width: 100%;
 }
 
@@ -149,6 +149,9 @@ footer{
      color: #2a2a2a;
      background-color: transparent;
   }
+  .footer-nav>.navlink>p>a:hover{
+    text-decoration: underline;
+  }
   .footer-nav>.navlink>h3{
     font-weight: 500;
     line-height: 1.5;
@@ -171,6 +174,7 @@ footer{
     font-weight: 500;
      letter-spacing: 0;
      color: #2a2a2a;
+     /* text-align: left; */
   }
   .indiegogo-email>input{
     width: 100%;
@@ -193,6 +197,11 @@ footer{
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0;
+    text-align: left;
+    margin-left: 10px;
+ }
+ .indiegogo-email>img{
+    width: 20%;
  }
  .indiegogo-email>.my-checkbox>#checkbox{
     fill: #2a2a2a;
@@ -202,7 +211,6 @@ footer{
     font-weight: 500;
     letter-spacing: 0;
     background-color: #E51075;
- 
  }
  .indiegogo-email>button{
     width: 100%;
@@ -235,10 +243,12 @@ footer{
     height: 40px;
     padding: 0px 30px;
     margin-right: 25px;
-    /* background-color: #fff; */
-    /* border: 1px solid #c8c8c8; */
+    background-color:transparent;
+    color: #2a2a2a;
+    border: 1px solid #c8c8c8;
     outline: none;
     cursor: pointer;
+    width: 25%;
  }
  #footer-icon>img{
     width: 22px;
