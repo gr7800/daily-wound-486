@@ -112,7 +112,20 @@ button+.ques{
 button+.ques+.ans{
     text-align: center;
 }
-
+#container1{
+    width: 70%;
+    height: auto;
+    border: 1px solid transparent;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+#container{
+    padding: 10px;
+    border: 1px solid purple;
+    background-color: lightskyblue;
+}
 
 
 /* ------------------------------------FOOTER----------------------------FOOTER------------------------ */

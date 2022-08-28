@@ -1,7 +1,7 @@
 let startbtn = document.querySelector("#start");
-startbtn.addEventListener("click", "startfun");
+startbtn.addEventListener("click", startfun);
 
-let startfun = () => {
+function startfun () {
      let container = document.querySelector("#container");
      container.innerHTML = null;
 
