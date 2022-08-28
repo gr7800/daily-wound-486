@@ -1,124 +1,14 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndegogoLogin</title>
+    <title>Start Crowdfunding with Indiegogo</title>
     <link rel="icon" type="image/x-icon"
-          href="https://g2.iggcdn.com/assets/favicon/favicon-64-f86781f1d221c3eea847e861d0b2b631f0cd49bbdb2cac0b0ed052664fa2380c.png">
-    <link rel="stylesheet" href="./navbar.css">
-    <link rel="stylesheet" href="./bottompart.css">
-    <style>
-        body{
-           margin: 0px;
-           padding: 0px;
-        }
-        #indegogoform {
-            width: 35%;
-            margin: auto;
-            background-color: white;
-            border: 1px solid #757575;
-            padding: 50px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-            margin-bottom: 50px;
-        }
-
-        #indegogoform>div:first-child {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #indegogoform>div>h1 {
-            text-align: center;
-            line-height: 0px;
-        }
-
-        #indegogoform>div>h3 {
-            text-align: center;
-            line-height: 0px;
-            color: #757575;
-            margin-bottom: 20px;
-            line-height: 10px;
-            font-weight: normal;
-        }
-
-        #indegogoform>div>label {
-            font-size: 20px;
-            color: #757575;
-        }
-        #indegogoform>div:first-child>input{
-            padding: 10px;
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-        #indegogoform>div:first-child>#password{
-            margin: 0px;
-        }
-        #indegogoform>div:first-child>input+a{
-            width: 100%;
-            text-align: right;
-            color: #757575;
-            margin-bottom: 15px;
-            text-decoration: underline;
-        }
-        #checkboxa {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-        }
-
-        #checkboxa>div:first-child {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-
-        }
-
-        #checkboxpa {
-            font-size: 18px;
-            font-style: normal;
-            font-weight: normal;
-            color: #757575
-
-        }
-
-        #checkboxpa>p>a {
-            color: #e51075;
-            text-decoration: underline;
-        }
-        #indegogoform>:nth-child(2)>div>button{
-            padding: 10px;
-            width: 100%;
-            background-color: #e51075;
-            color: white;
-            border: none;
-            cursor: pointer;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        }
-        #indegogoform>:nth-child(2)>div{
-            text-align: center;
-        }
-        #fb{
-            font-size: 20px;
-            width: 100%;
-            background-color: #405c9d;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        }
-        #indegogoform>div:last-child>p{
-            text-align: center;
-            font-size: 20px;
-            font-weight: normal;
-            color: #757575;
-        }
-        #indegogoform>div:last-child>p>a{
-            color: black;
-        }
-       
- 
-
-    </style>
+    href="https://g2.iggcdn.com/assets/favicon/favicon-64-f86781f1d221c3eea847e861d0b2b631f0cd49bbdb2cac0b0ed052664fa2380c.png">
+    <link rel="stylesheet" href="campaign.css">
+    
 </head>
 
 <body>
@@ -314,191 +204,159 @@
             </div>
         </div>
     </div>
-    <div id="indegogoform">
-        <div>
-            <h1>Welcome back!</h1>
-            <h3>Log in to continue.</h3>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Your Email">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Password">
-            <a href="https://www.indiegogo.com/accounts/password/new">Forgot your password?</a>
-        </div>
-        
-        <div>
-            <div>
-                <button id="Signupindegogo" onclick="Indegoglogin()">LOG IN</button>
+
+    <div id="main_div">
+        <div id="imgdiv"><img
+                src="https://prod-backend-company-uploads-transcend-io.s3.amazonaws.com/57b21f6a-c3dd-4f0f-8004-f6dd369fabe2/242e003e-9311-4f33-bb03-46c24bee3754"
+                alt="Error Displaying Image"></div>
+        <div id="contdiv">
+            <h1>Let’s get ready to start your campaign!</h1>
+            <p id="text">We want to create the best onboarding for you – please fill out the information below.
+            Your answers will be locked for this campaign and can’t be changed later.
+            </p>
+            <p class="ques">Who are you raising money for?</p>
+            <p class="ans">
+                Please choose the type of account that will be receiving your funds.</p>
+                <div id="radio">
+                    <label class="radio">
+                        <input type="radio" name="radioopt" checked >Individual
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="radioopt" >Business or Nonprofit
+                    </label>
+                </div>
+            
+            <p class="ques">Where are you located?</p>
+            <p class="ans">If you are raising funds as an individual, what is your country of legal residence? If you
+                are raising funds for a business, where is the business headquartered? Learn more about <a href="https://support.indiegogo.com/hc/en-us/articles/115002299827-How-do-I-choose-my-bank-account-country-country-of-legal-residence-and-currency-">country
+                    limitations</a> .</p>
+            <select name="dropdown" class="drop">
+                <option value="">Select a residence country</option>
+                <option value="us">United States</option>
+                <option value="aus">Australia</option>
+                <option value="au">Austria</option>
+                <option value="bel">Belgium</option>
+                <option value="cn">Canada</option>
+                <option value="cy">Cyprus</option>
+                <option value="dn">Denmakr</option>
+                <option value="es">Estonia</option>
+                <option value="fn">Finland</option>
+                <option value="fr">France</option>
+                <option value="ge">Germany</option>
+                <option value="gr">Greece</option>
+                <option value="hk">Honk Kong</option>
+                <option value="ir">Ireland</option>
+                <option value="it">Italy</option>
+                <option value="in">India</option>
+                <option value="ja">Japan</option>
+                <option value="la">Lativa</option>
+                <option value="li">Lithunia</option>
+                <option value="lx">Luxembourg</option>
+                <option value="ma">Malta</option>
+                <option value="me">Mexico</option>
+                <option value="ne">Netherlands</option>
+                <option value="nz">New Zealand</option>
+                <option value="no">Norway</option>
+                <option value="po">Poland</option>
+                <option value="si">Singapore</option>
+                <option value="sl">Slovakia</option>
+                <option value="so">Slovenia</option>
+                <option value="sp">Spain</option>
+                <option value="sw">Sweden</option>
+                <option value="sw">Switzerland</option>
+                <option value="uk">United Kingdom</option>
+                <option value="oc">Other Countries</option>
+            </select>
+            <p class="ques">Where is your bank?</p>
+            <p class="ans">Your bank account location determines the currency in which you can raise funds.</p>
+            <select name="city" class="drop">
+                <option value="">Select a bank country</option>
+                <option value="us">United States</option>
+                <option value="oc">Other Countries</option>
+            </select>
+            <button id="start">START MY CAMPAIGN</button>
+            <div id="container1">
+                <p id="container"></p>
             </div>
-            <div>
-                OR
-            </div>
-            <div id="fb">
-                <a href="https://www.facebook.com/v6.0/dialog/oauth?client_id=2392863781&redirect_uri=https%3A%2F%2Fwww.indiegogo.com%2Faccounts%2Fauth%2Ffacebook%2Fcallback&response_type=code&scope=email%2Cuser_friends&state=b020b2d1470a8526818e098a93f625cda64c64f20fb8d290"><img src="https://i.ibb.co/qr2VgJG/fboriginal.png" alt="fboriginal" border="0"></a>
-            </div>
-            <div>
-                <a href=""><img src="https://i.ibb.co/pjXqnDd/no-post-withou-your-permission.png" alt="no-post-withou-your-permission" border="0"></a>
-            </div>
-        </div>
-        <div>
-            <p>New to Indiegogo? <a href="./indegogosignup.html">Sign Up</a></p>
-        </div>
-    </div>
-    <div id="indegogobottom">
-        <div id="bottomfirstdiv">
-            <div>
-                <div id="firsttitlebottom">EXPLORE</div>
-                <div>
-                    <a href="https://www.indiegogo.com/about/what-we-do">What We Do</a>
-                </div>
-                <div>
-                    <a
-                        href="https://www.indiegogo.com/explore/all?project_type=campaign&project_timing=all&sort=trending">Funding</a>
-                </div>
-            </div>
-            <div>
-                <div id="firsttitlebottom">
-                    ABOUT
-                </div>
-                <div>
-                    <a href="https://www.indiegogo.com/about/our-story">About Us</a>
-                </div>
-                <div>
-                    <a href="https://go.indiegogo.com/blog">Blog</a>
-                </div>
-                <div>
-                    <a href="https://learn.indiegogo.com/trust/">Trust & Safty</a>
-                </div>
-                <div>
-                    <a href="https://support.indiegogo.com/hc/en-us">Help & Support</a>
-                </div>
-                <div>
-                    <a href="https://www.indiegogo.com/contact/press">Press</a>
-                </div>
-                <div>
-                    <a href="https://www.indiegogo.com/careers">Carrears</a>
-                </div>
-                <div>
-                    <a href="https://support.indiegogo.com/hc/en-us/requests/new?ticket_form_id=45336">Contacts</a>
-                </div>
-            </div>
-            <div>
-                <div id="firsttitlebottom">ENTREPRENEURS</div>
-                <div>
-                    <a href="https://entrepreneur.indiegogo.com/how-it-works/">How it Works</a>
-                </div>
-                <div>
-                    <a
-                        href="https://entrepreneur.indiegogo.com/how-it-works/indiegogo-vs-kickstarter/?utm_campaign=iggvsks&utm_content=howitworks&utm_medium=howitworks&utm_source=igg">Indiegogo
-                        vs. Kickstarter</a>
-                </div>
-                <div>
-                    <a href="https://entrepreneur.indiegogo.com/education/">Education Center</a>
-                </div>
-                <div>
-                    <a href="https://entrepreneur.indiegogo.com/directory/">Experts Directory</a>
-                </div>
-                <div>
-                    <a
-                        href="https://support.indiegogo.com/hc/en-us/articles/204456408-Fees-Pricing-for-Campaigners-How-much-does-Indiegogo-cost-">Fees</a>
-                </div>
-                <div>
-                    <a href="https://enterprise.indiegogo.com/">Enterprises</a>
-                </div>
-                <div>
-                    <a href="https://entrepreneur.indiegogo.com/how-it-works/indiegogo-china/">China</a>
-                </div>
-            </div>
-            <div id="bottomformlogin">
-                <div>
-                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/YBvySJp/bottomform-img.png"
-                            alt="bottomform-img" border="0"></a>
-                </div>
-                <div>
-                    <input type="email" id="bottomforminput" placeholder="Your Email Address">
-                </div>
-                <div id="checkbox">
-                    <div>
-                        <input type="checkbox" id="terms" name="terms" value="True">
-                    </div>
-                    <div id="checkboxp">
-                        <p>I agree to the <a href="https://www.indiegogo.com/about/terms">Terms of Use</a> and have read and understand the <a href="https://indiegogo.trsnd.co/policies">Privacy Policy</a></p>
-                    </div>
-                </div>
-                <div>
-                    <a href="./login.html"><button id="signmeup">SIGN ME UP</button></a>
-                </div>
-            </div>
-        </div>
-        <div id="socialsiteconeect">
-            <div><button>₹Indian Rupee (INR)</button></div>
-            <div><a href="https://www.facebook.com/Indiegogo"><img src="https://i.ibb.co/6bgScBT/bottom-fb-logo.png" alt="bottom-fb-logo" border="0"></a></div>
-            <div>
-                <a href="https://twitter.com/indiegogo"><img src="https://i.ibb.co/p06S0zP/bottomtwitterlogo.png" alt="bottomtwitterlogo" border="0"></a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/indiegogo"><img src="https://i.ibb.co/xCWgCZG/youtubelogobottom.png" alt="youtubelogobottom" border="0"></a>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/indiegogo/"><img src="https://i.ibb.co/SyH7cPD/instabottomlogo.png" alt="instabottomlogo" border="0"></a>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/company/indiegogo"><img src="https://i.ibb.co/jwwPnj2/linkdenlogobottom.png" alt="linkdenlogobottom" border="0"></a>
-            </div>
-            <div>
-                <a href="https://open.spotify.com/show/7bEdWFbpv3rKHotpDzcCV4?si=6a5cee9902214695&nd=1"><img src="https://i.ibb.co/L6tz9h8/bottomspootify.png" alt="bottomspootify" border="0"></a>
-            </div>
-        </div>
-        <div><hr></div>
-        <div>
-            <div>
-                <a href="https://www.indiegogo.com/about/terms">Terms of Use</a>
-            </div>
-            <div>
-                <a href="https://indiegogo.trsnd.co/policies">Privacy Policy</a>
-            </div>
-            <div>
-                <a href="https://indiegogo.trsnd.co/policies">Cookies Policy</a>
-            </div>
-            <div>
-                <a href="">Do Not Sell My Personal Information</a>
-            </div>
-            <div>
-                <a href="https://support.indiegogo.com/hc/en-us/articles/360057893771-Accessibility-Notice">Accessibility</a>
-            </div>
-            <div>
-                <a href="">© 2022 Indiegogo, Inc. All Rights Reserved</a>
-            </div>
+            <p class="ques">What countries are supported by Indiegogo?</p>
+            <p class="ans">You can start a campaign in countries supported by our payment processor. Learn more about
+                potential options if your country is not supported at this time.</p>
+
         </div>
     </div>
+
+    <!-- ----------------------------FOOTER-------------------------------FOOTER------------------ -->
+
+    <footer>
+        <div id="footer-section">
+             <div class="footer-nav">
+                  <div class="navlink">
+                       <h3>EXPLORE</h3>
+                       <p><a href="#">What We Do</a></p>
+                       <p><a href="#">Funding</a></p>
+                  </div>
+
+                  <div class="navlink">
+                       <h3>ABOUT</h3>
+                       <p><a href="#">About Us</a></p>
+                       <p><a href="#">Blog</a></p>
+                       <p><a href="#">Trust & Safety</a></p>
+                       <p><a href="#">Help & Support</a></p>
+                       <p><a href="#">Press</a></p>
+                       <p><a href="#">Careers</a></p>
+                       <p><a href="#">Contact</a></p>
+                  </div>
+
+                  <div class="navlink">
+                       <h3>ENTREPRENEURS</h3>
+                       <p><a href="#">How It Works</a></p>
+                       <p><a href="#">Indiegogo vs. Kickstarter</a></p>
+                       <p><a href="#">Education Center</a></p>
+                       <p><a href="#">Experts Directory</a></p>
+                       <p><a href="#">Fees</a></p>
+                       <p><a href="#">Enterprise</a></p>
+                       <p><a href="#">China</a></p>
+                  </div>
+             </div>
+
+             <div class="indiegogo-email">
+                  <img src="http://1um6t61taqov462jb629sqba.wpengine.netdna-cdn.com/wp-content/themes/business/assets/images/email.svg" alt="Error Displaying Image">
+                  <h4>Find it first on Indiegogo</h4>
+                  <p>Discover new and clever products in <br> the Indiegogo newsletter</p>
+
+                  <input type="email" id="email" placeholder="Your email address">
+                  <div class="my-checkbox">
+                       <input type="checkbox" id="checkbox">
+                       <p>I agree to the Terms of Use and have <br> read and understand the <br> Privacy Policy</p>
+                  </div>
+                  <button>SIGN ME UP</button>
+
+             </div>
+        </div>
+
+        <div id="footer-icon">
+             <button>₹ Indian Rupee (INR)</button>
+             <img title="Facebook" src="https://img.icons8.com/material-rounded/2x/facebook-f--v2.png" alt="">
+             <img title="Twitter" src="https://img.icons8.com/ios-glyphs/2x/twitter.png" alt="">
+             <img title="Youtube" src="https://img.icons8.com/ios-glyphs/2x/youtube-play.png" alt="">
+             <img title="Instagram" src="https://img.icons8.com/material-outlined/2x/instagram-new.png" alt="">
+             <img title="Linkedin" src="https://img.icons8.com/ios-glyphs/2x/linkedin-2.png" alt="">
+             <img title="Spotify" src="https://img.icons8.com/ios-glyphs/2x/spotify.png" alt="">
+        </div>
+        <hr>
+
+        <div id="copy-right">
+             <p>Terms of Use</p>
+             <p>Privacy Policy</p>
+             <p>Cookie Policy</p>
+             <p>Do Not Sell My Personal Information</p>
+             <p>Accessibility</p>
+             <p>© 2022 Indiegogo, Inc. All Rights Reserved</p>
+        </div>
+   </footer>
 </body>
 
 </html>
+
+<script src="campaign.js"></script>
 <script src="./navbar.js"></script>
-<script>
-    let userdata=JSON.parse(localStorage.getItem("indigigouser"))||[];
-    function Indegoglogin() {
-        
-        let Password= document.getElementById('password').value;
-        let Email= document.getElementById('email').value;
-
-        if(check(Email,Password)==true){
-            alert("User Login Succesfull!");
-            window.location.href="./index.html"
-        }else{
-            alert("User Authentication Failed");
-        }
-    }
-
-    let check=(Email,Password)=>{
-    let gt=JSON.parse(localStorage.getItem("indigigouser"))||[];
-    let res=false
-       gt.forEach(element => {
-          if(element.email==Email&&element.password==Password){
-            res=true;
-          }
-       });
-       return res
-       
-    }
-
-</script>
